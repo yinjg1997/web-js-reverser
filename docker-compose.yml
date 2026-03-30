@@ -1,0 +1,47 @@
+services:
+  redis:
+    image: redis:7.0
+    restart: always
+    container_name: redis4crawler
+    ports:
+      - "26379:6379"
+    volumes:
+      - ./data/redis_data:/data
+    command: redis-server --requirepass q45Vk381MFl3K8JZSVtgdUV
+
+  mongodb:
+    image: mongo:5.0
+    container_name: mongo4crawler
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: q45Vk381MFl3K8JZSVtgdUV
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql4crawler
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: q45Vk381MFl3K8JZSVtgdUV
+      MYSQL_DATABASE: spider_db_local
+    volumes:
+      - ./data/mysql_data:/var/lib/mysql
+
+#  rabbitmq:
+#    image: rabbitmq:3.13-management
+#    container_name: rabbitmq4crawler
+#    restart: always
+#    ports:
+#      - "5672:5672"
+#      - "15672:15672"
+#    volumes:
+#      - ./data/rabbitmq_data:/var/lib/rabbitmq/mnesia
+#    environment:
+#      RABBITMQ_DEFAULT_USER: guest
+#      RABBITMQ_DEFAULT_PASS: guest
