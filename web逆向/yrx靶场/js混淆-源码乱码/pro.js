@@ -1,27 +1,47 @@
+/**
+ * m 是查询参数
+ * m = window.match1
+ * window.match1 = arguments[0].data.m
+ * data.m = _0x5d83a3
+ *
+ *     var _0x2268f9 = Date['parse'](new Date()) + (16798545 + -72936737 + 156138192)
+ *       , _0x57feae = oo0O0(_0x2268f9['toStr' + 'ing']()) + window['f'];
+ *     const _0x5d83a3 = {};
+ *     _0x5d83a3['m'] = _0x57feae + '丨' + _0x2268f9 / (-1 * 3483 + -9059 + 13542);
+ */
+
 var hexcase = 0;
 var b64pad = "";
 var chrsz = 16;
+
 function hex_md5(a) {
     return binl2hex(core_md5(str2binl(a), a.length * chrsz))
 }
+
 function b64_md5(a) {
     return binl2b64(core_md5(str2binl(a), a.length * chrsz))
 }
+
 function str_md5(a) {
     return binl2str(core_md5(str2binl(a), a.length * chrsz))
 }
+
 function hex_hmac_md5(a, b) {
     return binl2hex(core_hmac_md5(a, b))
 }
+
 function b64_hmac_md5(a, b) {
     return binl2b64(core_hmac_md5(a, b))
 }
+
 function str_hmac_md5(a, b) {
     return binl2str(core_hmac_md5(a, b))
 }
+
 function md5_vm_test() {
     return hex_md5("abc") == "900150983cd24fb0d6963f7d28e17f72"
 }
+
 function core_md5(p, k) {
     p[k >> 5] |= 128 << ((k) % 32);
     p[(((k + 64) >>> 9) << 4) + 14] = k;
@@ -105,21 +125,27 @@ function core_md5(p, k) {
     }
     return Array(o, n, m, l)
 }
+
 function md5_cmn(h, e, d, c, g, f) {
     return safe_add(bit_rol(safe_add(safe_add(e, h), safe_add(c, f)), g), d)
 }
+
 function md5_ff(g, f, k, j, e, i, h) {
     return md5_cmn((f & k) | ((~f) & j), g, f, e, i, h)
 }
+
 function md5_gg(g, f, k, j, e, i, h) {
     return md5_cmn((f & j) | (k & (~j)), g, f, e, i, h)
 }
+
 function md5_hh(g, f, k, j, e, i, h) {
     return md5_cmn(f ^ k ^ j, g, f, e, i, h)
 }
+
 function md5_ii(g, f, k, j, e, i, h) {
     return md5_cmn(k ^ (f | (~j)), g, f, e, i, h)
 }
+
 function core_hmac_md5(c, f) {
     var e = str2binl(c);
     if (e.length > 16) {
@@ -134,14 +160,17 @@ function core_hmac_md5(c, f) {
     var g = core_md5(a.concat(str2binl(f)), 512 + f.length * chrsz);
     return core_md5(d.concat(g), 512 + 128)
 }
+
 function safe_add(a, d) {
     var c = (a & 65535) + (d & 65535);
     var b = (a >> 16) + (d >> 16) + (c >> 16);
     return (b << 16) | (c & 65535)
 }
+
 function bit_rol(a, b) {
     return (a << b) | (a >>> (32 - b))
 }
+
 function str2binl(d) {
     var c = Array();
     var a = (1 << chrsz) - 1;
@@ -150,6 +179,7 @@ function str2binl(d) {
     }
     return c
 }
+
 function binl2str(c) {
     var d = "";
     var a = (1 << chrsz) - 1;
@@ -158,6 +188,7 @@ function binl2str(c) {
     }
     return d
 }
+
 function binl2hex(c) {
     var b = hexcase ? "0123456789ABCDEF" : "0123456789abcdef";
     var d = "";
@@ -166,6 +197,7 @@ function binl2hex(c) {
     }
     return d
 }
+
 function binl2b64(d) {
     var c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
     var f = "";
@@ -181,7 +213,15 @@ function binl2b64(d) {
     }
     return f
 }
-; 
-const f = hex_md5('1774889534000')
 
-console.log(`f::${f}`);
+
+function get_m() {
+    const mw = Date['parse'](new Date()) + (16798545 + -72936737 + 156138192)
+    // const mw = 1775565929000
+    const f = hex_md5(mw.toString())
+    return f + '丨' + mw / (-1 * 3483 + -9059 + 13542)
+}
+
+module.exports = {
+    get_m
+}

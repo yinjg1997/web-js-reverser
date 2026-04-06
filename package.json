@@ -11,15 +11,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "crypto-js": "^4.2.0",
-    "js-base64": "^3.7.8",
-    "jsencrypt": "^3.5.4",
-    "sm-crypto": "^0.4.0",
-    "express": "^5.2.1",
-    "vm2": "^3.10.1",
-    "jsdom": "^25.0.1",
     "@babel/core": "^7.12.10",
     "@babel/generator": "^7.12.11",
-    "@babel/types": "^7.12.12"
+    "@babel/types": "^7.12.12",
+    "axios": "^1.14.0",
+    "crypto-js": "^4.2.0",
+    "express": "^5.2.1",
+    "js-base64": "^3.7.8",
+    "jsdom": "^25.0.1",
+    "jsencrypt": "^3.5.4",
+    "sm-crypto": "^0.4.0",
+    "vm2": "^3.10.1"
   }
 }
