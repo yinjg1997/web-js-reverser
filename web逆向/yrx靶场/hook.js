@@ -12,7 +12,17 @@
 
 (function () {
     'use strict';
-
+    const _realConsole = window.console;
+    // 冻结 console，防止被覆盖
+    Object.defineProperty(window, 'console', {
+        get: function () {
+            return _realConsole;
+        },
+        set: function () {
+        },
+        configurable: false
+    });
+    console.warn('hook.js loaded');
     const _setInterval = setInterval;
     setInterval = function (fn, delay) {
         const fnStr = fn.toString();
@@ -20,19 +30,32 @@
             return _setInterval(function () {
             }, delay);
         }
-        // return _setInterval(fn, delay);
-        return _setInterval(()=>{}, delay);
+        return _setInterval(fn, delay);
+        // console.log('hook setInterval');
+        // return _setInterval(() => {
+        // }, delay);
     };
 
-    const _Function = Function;
-    Function = function (...args) {
-        const fnStr = args.join('');
-        if (fnStr.includes('debugger')) {
-            return _Function();
-        }
-        return _Function(...args);
+    const _origFunction = Function.prototype.constructor;
+
+    Function.prototype.constructor = function (...args) {
+        args = args.map(arg =>
+            typeof arg === 'string' ? arg.replace(/debugger/g, '"debugger"') : arg
+        );
+        return _origFunction.apply(this, args);
     };
 
+    const _origEval = window.eval;
+    window.eval = function () {
+        let args = Array.prototype.slice.call(arguments);
+        args = args.map(value => {
+            if (typeof value === 'string') {
+                return value.replace(/debugger/g, "");
+            }
+            return value;
+        });
+        return _origEval.apply(this, args);
+    };
 
     // Object.defineProperty(window, 'f', {
     //     get() {
