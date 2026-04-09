@@ -62,6 +62,51 @@ function foldStrings(code) {
     return generator(ast, { jsescOption: { minimal: true } }).code
 }
 
+// 内联字典对象: _0x46739a / _0x48c7cb["key"] → 实际值
+function inlineDictionary(code) {
+    // 1. 从代码中提取字典定义
+    const dictStart = code.indexOf('var _0x46739a = {};');
+    if (dictStart === -1) {
+        console.log("字典 _0x46739a 未找到，跳过内联");
+        return code;
+    }
+    // 找到字典结束位置: var _0x48c7cb = _0x46739a;
+    const dictEndMatch = code.indexOf('var _0x48c7cb = _0x46739a;', dictStart);
+    if (dictEndMatch === -1) {
+        console.log("字典别名 _0x48c7cb 未找到，跳过内联");
+        return code;
+    }
+    const dictEnd = dictEndMatch + 'var _0x48c7cb = _0x46739a;'.length;
+    const dictCode = code.substring(dictStart, dictEnd);
+
+    // 2. 在 vm 沙箱中执行字典代码，拿到实际值
+    const sandbox = {};
+    vm.createContext(sandbox);
+    vm.runInContext(dictCode, sandbox);
+    const dict = sandbox._0x48c7cb;
+
+    const ast = parser.parse(code)
+    traverse(ast, {
+        AssignmentExpression(path) {
+            const { left, right, operator } = path.node;
+            if (
+                operator === "=" &&
+                right.type === "MemberExpression" &&
+                right.object.type === "Identifier" &&
+                right.object.name === "_0x48c7cb"
+            ) {
+                const result = dict[right.property.value];
+                if (typeof result === "string") {
+                    path.get('right').replaceWith(t.stringLiteral(result));
+                } else if (typeof result === "function") {
+                    path.get('right').replaceWith(t.functionexpression(result));
+                }
+            }
+        },
+    });
+    return generator(ast, { jsescOption: { minimal: true } }).code
+}
+
 
 
 // ==================== main ====================
@@ -88,4 +133,9 @@ var $dbsm_0x4f3f = sandbox2.$dbsm_0x4f3f
 code = resolveDecoderCalls(code, $dbsm_0x4f3f)
 // 解字符串拼接
 code = foldStrings(code)
+// 后面不需要解了, 搞不出来,
+// 内联字典对象
+// code = inlineDictionary(code)
+// 字典内联后可能产生新的字符串拼接，再折叠一次
+// code = foldStrings(code)
 fs.writeFileSync(outputFile, code, "utf-8");
