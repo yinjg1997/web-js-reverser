@@ -74,15 +74,18 @@ let code = fs.readFileSync(inputFile, "utf-8");
 console.log("Initializing decoder...");
 code = initDecoder(code);
 const parts = code.split("// @@@yuri@@@")
+// 数组自旋
 const sandbox1 = {};
 vm.createContext(sandbox1);
 vm.runInContext(parts[0], sandbox1);
 var $dbsm_0x2328 = sandbox1.$dbsm_0x2328
 console.log($dbsm_0x2328)
+// 解第一层函数调用
 const sandbox2 = { $dbsm_0x2328 };
 vm.createContext(sandbox2);
 vm.runInContext(parts[1], sandbox2)
 var $dbsm_0x4f3f = sandbox2.$dbsm_0x4f3f
 code = resolveDecoderCalls(code, $dbsm_0x4f3f)
+// 解字符串拼接
 code = foldStrings(code)
 fs.writeFileSync(outputFile, code, "utf-8");
