@@ -1,8 +1,4 @@
 document = {};
-// @@@yuri@@@
-// setInterval(function () {
-//   $dbsm_0x3a31cc();
-// }, 4000);
 
 function $dbsm_0x290f85(_0x12a9d9) {
     var _0x5b73c0 = function () {
@@ -232,37 +228,6 @@ function $dbsm_0x290f85(_0x12a9d9) {
     }
 
     return _0x1036ab(_0x303003());
-}
-
-
-function $dbsm_0x3a31cc(_0x1f9dcd) {
-    function _0x4176f1(_0x163f32) {
-        if (typeof _0x163f32 === "string") {
-            return function (_0x56fcdb) {
-            }["constructor"]("while (true) {}")["apply"]("counter");
-        } else {
-            if (("" + _0x163f32 / _0x163f32)["length"] !== 1 || _0x163f32 % 20 === 0) {
-                (function () {
-                    return true;
-                })["constructor"]("debugger")["call"]("action");
-            } else {
-                (function () {
-                    return false;
-                })["constructor"]("debugger")["apply"]("stateObject");
-            }
-        }
-
-        _0x4176f1(++_0x163f32);
-    }
-
-    try {
-        if (_0x1f9dcd) {
-            return _0x4176f1;
-        } else {
-            _0x4176f1(0);
-        }
-    } catch (_0x46d3d1) {
-    }
 }
 
 function get_m() {

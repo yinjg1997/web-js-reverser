@@ -19,7 +19,7 @@ const headers = {
     // 已按要求修改
     'user-agent': 'yuanrenxue',
     'x-requested-with': 'XMLHttpRequest',
-    'cookie': `sessionid=fd4ufggspvzx05yzg09kki1kqpm1z882; m=${get_m()}`
+    'cookie': `sessionid=gi0gu6wzpzhj4kdbkydpbi7gua1yjsw9; m=${get_m()}`
 };
 
 // 固定参数
