@@ -1,0 +1,15 @@
+# ==========加密/编码===========
+orjson==3.11.5
+pycryptodomex==3.23.0
+
+# ===========下载器============
+requests
+websockets==16.0
+python-socks
+aiohttp
+
+pyquery
+pandas
+environs
+loguru
+tqdm
