@@ -1,45 +1,106 @@
 // ==UserScript==
-// @name         企查查-无限debugger
+// @name         无限debugger
 // @namespace    http://tampermonkey.net/
 // @version      2025-11-22
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.qcc.com/web/search?key=%E6%B7%B1%E5%9C%B3%E5%B8%82%E6%B0%A6%E4%B8%89%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8
+// @match        *://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=qcc.com
 // @grant        none
 // @run-at document-start
 // ==/UserScript==
 !(function () {
-  let eval_back = eval;
-  let eval = function (args) {
-    if (args.includes("debugger")) {
-      return null;
-    } else {
-      return eval_back(args);
-    }
-  };
+  const _eval = globalThis.eval.bind(globalThis);
+
+  Object.defineProperty(globalThis, "eval", {
+    configurable: true,
+    enumerable: false,
+    writable: true,
+    value: function (args) {
+      if (typeof args !== "string") {
+        return _eval(args);
+      }
+
+      // 将所有 debugger 变体替换为空字符串
+      const cleaned = args
+        .replace(/\bdebugger\b/g, "")
+
+      if (cleaned !== args) {
+        console.warn("[eval hook] removed debugger →", args.slice(0, 80));
+      }
+
+      return _eval(cleaned);
+    },
+  });
+
   console.log("✅ eval hook success");
 })();
 
 !(function () {
-  Function.prototype._constructor = Function.prototype.constructor;
-  Function.prototype.constructor = function () {
-    if (arguments.toString().includes("debugger")) {
-      return null;
-    }
-    return Function.prototype._constructor.apply(this, arguments);
-  };
-  Object.freeze(Function.prototype.constructor);
+  const _constructor = Function.prototype.constructor;
+
+  Object.defineProperty(Function.prototype, "constructor", {
+    configurable: true,
+    enumerable: false,
+    writable: true,
+    value: function (...args) {
+      // 将每个参数中的 debugger 变体替换为空字符串
+      const cleaned = args.map((arg) =>
+        typeof arg === "string"
+          ? arg
+              .replace(/\bdebugger\b/g, "")
+              .replace(/\\x64\\x65\\x62\\x75\\x67\\x67\\x65\\x72/g, "")
+              .replace(/\\u0064\\u0065\\u0062\\u0075\\u0067\\u0067\\u0065\\u0072/g, "")
+          : arg
+      );
+
+      if (cleaned.join("") !== args.join("")) {
+        console.warn("[constructor hook] removed debugger →", args.join("").slice(0, 80));
+      }
+
+      return _constructor.apply(this, cleaned);
+    },
+  });
+
   console.log("✅ constructor hook success");
 })();
 
 !(function () {
-  let setInterval_back = setInterval;
-  let setInterval = function (a, b) {
-    if (a.toString().includes("debugger")) {
-      return null;
-    }
-    return setInterval_back(a, b);
-  };
+  const _setInterval = globalThis.setInterval.bind(globalThis);
+
+  Object.defineProperty(globalThis, "setInterval", {
+    configurable: true,
+    enumerable: false,
+    writable: true,
+    value: function (fn, delay, ...args) {
+      if (typeof fn === "string") {
+        // 字符串形式：setInterval("debugger", 100)
+        const cleaned = fn
+          .replace(/\bdebugger\b/g, "")
+          .replace(/\\x64\\x65\\x62\\x75\\x67\\x67\\x65\\x72/g, "")
+          .replace(/\\u0064\\u0065\\u0062\\u0075\\u0067\\u0067\\u0065\\u0072/g, "");
+
+        if (cleaned !== fn) {
+          console.warn("[setInterval hook] removed debugger in string →", fn.slice(0, 80));
+        }
+        return _setInterval(cleaned, delay, ...args);
+
+      } else if (typeof fn === "function") {
+        // 函数形式：setInterval(function(){ debugger }, 100)
+        const fnStr = fn.toString();
+        if (/\bdebugger\b/.test(fnStr)) {
+          console.warn("[setInterval hook] removed debugger in function →", fnStr.slice(0, 80));
+          // 替换函数体中的 debugger 后重新构造函数
+          const cleaned = fnStr.replace(/\bdebugger\b/g, "");
+          fn = new Function(`return (${cleaned})`)();
+        }
+        return _setInterval(fn, delay, ...args);
+
+      } else {
+        return _setInterval(fn, delay, ...args);
+      }
+    },
+  });
+
   console.log("✅ setInterval hook success");
 })();
