@@ -1,0 +1,2536 @@
+{
+  "58344": {
+    "char": "",
+    "unicode": "U+E3E8",
+    "glyph_name": "gid58344",
+    "ocr_text": "体",
+    "image": "codepoint_58344_U+E3E8_gid58344.png"
+  },
+  "58345": {
+    "char": "",
+    "unicode": "U+E3E9",
+    "glyph_name": "gid58345",
+    "ocr_text": "y",
+    "image": "codepoint_58345_U+E3E9_gid58345.png"
+  },
+  "58346": {
+    "char": "",
+    "unicode": "U+E3EA",
+    "glyph_name": "gid58346",
+    "ocr_text": "十",
+    "image": "codepoint_58346_U+E3EA_gid58346.png"
+  },
+  "58347": {
+    "char": "",
+    "unicode": "U+E3EB",
+    "glyph_name": "gid58347",
+    "ocr_text": "现",
+    "image": "codepoint_58347_U+E3EB_gid58347.png"
+  },
+  "58348": {
+    "char": "",
+    "unicode": "U+E3EC",
+    "glyph_name": "gid58348",
+    "ocr_text": "快",
+    "image": "codepoint_58348_U+E3EC_gid58348.png"
+  },
+  "58349": {
+    "char": "",
+    "unicode": "U+E3ED",
+    "glyph_name": "gid58349",
+    "ocr_text": "便",
+    "image": "codepoint_58349_U+E3ED_gid58349.png"
+  },
+  "58350": {
+    "char": "",
+    "unicode": "U+E3EE",
+    "glyph_name": "gid58350",
+    "ocr_text": "语",
+    "image": "codepoint_58350_U+E3EE_gid58350.png"
+  },
+  "58351": {
+    "char": "",
+    "unicode": "U+E3EF",
+    "glyph_name": "gid58351",
+    "ocr_text": "却",
+    "image": "codepoint_58351_U+E3EF_gid58351.png"
+  },
+  "58352": {
+    "char": "",
+    "unicode": "U+E3F0",
+    "glyph_name": "gid58352",
+    "ocr_text": "月",
+    "image": "codepoint_58352_U+E3F0_gid58352.png"
+  },
+  "58353": {
+    "char": "",
+    "unicode": "U+E3F1",
+    "glyph_name": "gid58353",
+    "ocr_text": "物",
+    "image": "codepoint_58353_U+E3F1_gid58353.png"
+  },
+  "58354": {
+    "char": "",
+    "unicode": "U+E3F2",
+    "glyph_name": "gid58354",
+    "ocr_text": "水",
+    "image": "codepoint_58354_U+E3F2_gid58354.png"
+  },
+  "58355": {
+    "char": "",
+    "unicode": "U+E3F3",
+    "glyph_name": "gid58355",
+    "ocr_text": "的",
+    "image": "codepoint_58355_U+E3F3_gid58355.png"
+  },
+  "58356": {
+    "char": "",
+    "unicode": "U+E3F4",
+    "glyph_name": "gid58356",
+    "ocr_text": "放",
+    "image": "codepoint_58356_U+E3F4_gid58356.png"
+  },
+  "58357": {
+    "char": "",
+    "unicode": "U+E3F5",
+    "glyph_name": "gid58357",
+    "ocr_text": "知",
+    "image": "codepoint_58357_U+E3F5_gid58357.png"
+  },
+  "58358": {
+    "char": "",
+    "unicode": "U+E3F6",
+    "glyph_name": "gid58358",
+    "ocr_text": "爱",
+    "image": "codepoint_58358_U+E3F6_gid58358.png"
+  },
+  "58359": {
+    "char": "",
+    "unicode": "U+E3F7",
+    "glyph_name": "gid58359",
+    "ocr_text": "万",
+    "image": "codepoint_58359_U+E3F7_gid58359.png"
+  },
+  "58361": {
+    "char": "",
+    "unicode": "U+E3F9",
+    "glyph_name": "gid58361",
+    "ocr_text": "表",
+    "image": "codepoint_58361_U+E3F9_gid58361.png"
+  },
+  "58362": {
+    "char": "",
+    "unicode": "U+E3FA",
+    "glyph_name": "gid58362",
+    "ocr_text": "风",
+    "image": "codepoint_58362_U+E3FA_gid58362.png"
+  },
+  "58363": {
+    "char": "",
+    "unicode": "U+E3FB",
+    "glyph_name": "gid58363",
+    "ocr_text": "理",
+    "image": "codepoint_58363_U+E3FB_gid58363.png"
+  },
+  "58364": {
+    "char": "",
+    "unicode": "U+E3FC",
+    "glyph_name": "gid58364",
+    "ocr_text": "O",
+    "image": "codepoint_58364_U+E3FC_gid58364.png"
+  },
+  "58365": {
+    "char": "",
+    "unicode": "U+E3FD",
+    "glyph_name": "gid58365",
+    "ocr_text": "老",
+    "image": "codepoint_58365_U+E3FD_gid58365.png"
+  },
+  "58366": {
+    "char": "",
+    "unicode": "U+E3FE",
+    "glyph_name": "gid58366",
+    "ocr_text": "也",
+    "image": "codepoint_58366_U+E3FE_gid58366.png"
+  },
+  "58367": {
+    "char": "",
+    "unicode": "U+E3FF",
+    "glyph_name": "gid58367",
+    "ocr_text": "p",
+    "image": "codepoint_58367_U+E3FF_gid58367.png"
+  },
+  "58368": {
+    "char": "",
+    "unicode": "U+E400",
+    "glyph_name": "gid58368",
+    "ocr_text": "常",
+    "image": "codepoint_58368_U+E400_gid58368.png"
+  },
+  "58369": {
+    "char": "",
+    "unicode": "U+E401",
+    "glyph_name": "gid58369",
+    "ocr_text": "克",
+    "image": "codepoint_58369_U+E401_gid58369.png"
+  },
+  "58370": {
+    "char": "",
+    "unicode": "U+E402",
+    "glyph_name": "gid58370",
+    "ocr_text": "y",
+    "image": "codepoint_58370_U+E402_gid58370.png"
+  },
+  "58371": {
+    "char": "",
+    "unicode": "U+E403",
+    "glyph_name": "gid58371",
+    "ocr_text": "J",
+    "image": "codepoint_58371_U+E403_gid58371.png"
+  },
+  "58372": {
+    "char": "",
+    "unicode": "U+E404",
+    "glyph_name": "gid58372",
+    "ocr_text": "最",
+    "image": "codepoint_58372_U+E404_gid58372.png"
+  },
+  "58373": {
+    "char": "",
+    "unicode": "U+E405",
+    "glyph_name": "gid58373",
+    "ocr_text": "王",
+    "image": "codepoint_58373_U+E405_gid58373.png"
+  },
+  "58374": {
+    "char": "",
+    "unicode": "U+E406",
+    "glyph_name": "gid58374",
+    "ocr_text": "她",
+    "image": "codepoint_58374_U+E406_gid58374.png"
+  },
+  "58375": {
+    "char": "",
+    "unicode": "U+E407",
+    "glyph_name": "gid58375",
+    "ocr_text": "S",
+    "image": "codepoint_58375_U+E407_gid58375.png"
+  },
+  "58376": {
+    "char": "",
+    "unicode": "U+E408",
+    "glyph_name": "gid58376",
+    "ocr_text": "将",
+    "image": "codepoint_58376_U+E408_gid58376.png"
+  },
+  "58377": {
+    "char": "",
+    "unicode": "U+E409",
+    "glyph_name": "gid58377",
+    "ocr_text": "法",
+    "image": "codepoint_58377_U+E409_gid58377.png"
+  },
+  "58378": {
+    "char": "",
+    "unicode": "U+E40A",
+    "glyph_name": "gid58378",
+    "ocr_text": "青",
+    "image": "codepoint_58378_U+E40A_gid58378.png"
+  },
+  "58379": {
+    "char": "",
+    "unicode": "U+E40B",
+    "glyph_name": "gid58379",
+    "ocr_text": "O",
+    "image": "codepoint_58379_U+E40B_gid58379.png"
+  },
+  "58380": {
+    "char": "",
+    "unicode": "U+E40C",
+    "glyph_name": "gid58380",
+    "ocr_text": "光",
+    "image": "codepoint_58380_U+E40C_gid58380.png"
+  },
+  "58381": {
+    "char": "",
+    "unicode": "U+E40D",
+    "glyph_name": "gid58381",
+    "ocr_text": "d",
+    "image": "codepoint_58381_U+E40D_gid58381.png"
+  },
+  "58382": {
+    "char": "",
+    "unicode": "U+E40E",
+    "glyph_name": "gid58382",
+    "ocr_text": "我",
+    "image": "codepoint_58382_U+E40E_gid58382.png"
+  },
+  "58383": {
+    "char": "",
+    "unicode": "U+E40F",
+    "glyph_name": "gid58383",
+    "ocr_text": "呢",
+    "image": "codepoint_58383_U+E40F_gid58383.png"
+  },
+  "58384": {
+    "char": "",
+    "unicode": "U+E410",
+    "glyph_name": "gid58384",
+    "ocr_text": "j",
+    "image": "codepoint_58384_U+E410_gid58384.png"
+  },
+  "58385": {
+    "char": "",
+    "unicode": "U+E411",
+    "glyph_name": "gid58385",
+    "ocr_text": "员",
+    "image": "codepoint_58385_U+E411_gid58385.png"
+  },
+  "58386": {
+    "char": "",
+    "unicode": "U+E412",
+    "glyph_name": "gid58386",
+    "ocr_text": "大",
+    "image": "codepoint_58386_U+E412_gid58386.png"
+  },
+  "58387": {
+    "char": "",
+    "unicode": "U+E413",
+    "glyph_name": "gid58387",
+    "ocr_text": "每",
+    "image": "codepoint_58387_U+E413_gid58387.png"
+  },
+  "58388": {
+    "char": "",
+    "unicode": "U+E414",
+    "glyph_name": "gid58388",
+    "ocr_text": "具",
+    "image": "codepoint_58388_U+E414_gid58388.png"
+  },
+  "58389": {
+    "char": "",
+    "unicode": "U+E415",
+    "glyph_name": "gid58389",
+    "ocr_text": "受",
+    "image": "codepoint_58389_U+E415_gid58389.png"
+  },
+  "58390": {
+    "char": "",
+    "unicode": "U+E416",
+    "glyph_name": "gid58390",
+    "ocr_text": "教",
+    "image": "codepoint_58390_U+E416_gid58390.png"
+  },
+  "58391": {
+    "char": "",
+    "unicode": "U+E417",
+    "glyph_name": "gid58391",
+    "ocr_text": "W",
+    "image": "codepoint_58391_U+E417_gid58391.png"
+  },
+  "58392": {
+    "char": "",
+    "unicode": "U+E418",
+    "glyph_name": "gid58392",
+    "ocr_text": "利",
+    "image": "codepoint_58392_U+E418_gid58392.png"
+  },
+  "58393": {
+    "char": "",
+    "unicode": "U+E419",
+    "glyph_name": "gid58393",
+    "ocr_text": "军",
+    "image": "codepoint_58393_U+E419_gid58393.png"
+  },
+  "58394": {
+    "char": "",
+    "unicode": "U+E41A",
+    "glyph_name": "gid58394",
+    "ocr_text": "己",
+    "image": "codepoint_58394_U+E41A_gid58394.png"
+  },
+  "58395": {
+    "char": "",
+    "unicode": "U+E41B",
+    "glyph_name": "gid58395",
+    "ocr_text": "U",
+    "image": "codepoint_58395_U+E41B_gid58395.png"
+  },
+  "58396": {
+    "char": "",
+    "unicode": "U+E41C",
+    "glyph_name": "gid58396",
+    "ocr_text": "人",
+    "image": "codepoint_58396_U+E41C_gid58396.png"
+  },
+  "58397": {
+    "char": "",
+    "unicode": "U+E41D",
+    "glyph_name": "gid58397",
+    "ocr_text": "如",
+    "image": "codepoint_58397_U+E41D_gid58397.png"
+  },
+  "58398": {
+    "char": "",
+    "unicode": "U+E41E",
+    "glyph_name": "gid58398",
+    "ocr_text": "变",
+    "image": "codepoint_58398_U+E41E_gid58398.png"
+  },
+  "58399": {
+    "char": "",
+    "unicode": "U+E41F",
+    "glyph_name": "gid58399",
+    "ocr_text": "得",
+    "image": "codepoint_58399_U+E41F_gid58399.png"
+  },
+  "58400": {
+    "char": "",
+    "unicode": "U+E420",
+    "glyph_name": "gid58400",
+    "ocr_text": "要",
+    "image": "codepoint_58400_U+E420_gid58400.png"
+  },
+  "58401": {
+    "char": "",
+    "unicode": "U+E421",
+    "glyph_name": "gid58401",
+    "ocr_text": "t",
+    "image": "codepoint_58401_U+E421_gid58401.png"
+  },
+  "58402": {
+    "char": "",
+    "unicode": "U+E422",
+    "glyph_name": "gid58402",
+    "ocr_text": "斯",
+    "image": "codepoint_58402_U+E422_gid58402.png"
+  },
+  "58403": {
+    "char": "",
+    "unicode": "U+E423",
+    "glyph_name": "gid58403",
+    "ocr_text": "门",
+    "image": "codepoint_58403_U+E423_gid58403.png"
+  },
+  "58404": {
+    "char": "",
+    "unicode": "U+E424",
+    "glyph_name": "gid58404",
+    "ocr_text": "电",
+    "image": "codepoint_58404_U+E424_gid58404.png"
+  },
+  "58405": {
+    "char": "",
+    "unicode": "U+E425",
+    "glyph_name": "gid58405",
+    "ocr_text": "m",
+    "image": "codepoint_58405_U+E425_gid58405.png"
+  },
+  "58406": {
+    "char": "",
+    "unicode": "U+E426",
+    "glyph_name": "gid58406",
+    "ocr_text": "男",
+    "image": "codepoint_58406_U+E426_gid58406.png"
+  },
+  "58407": {
+    "char": "",
+    "unicode": "U+E427",
+    "glyph_name": "gid58407",
+    "ocr_text": "没",
+    "image": "codepoint_58407_U+E427_gid58407.png"
+  },
+  "58408": {
+    "char": "",
+    "unicode": "U+E428",
+    "glyph_name": "gid58408",
+    "ocr_text": "a",
+    "image": "codepoint_58408_U+E428_gid58408.png"
+  },
+  "58409": {
+    "char": "",
+    "unicode": "U+E429",
+    "glyph_name": "gid58409",
+    "ocr_text": "K",
+    "image": "codepoint_58409_U+E429_gid58409.png"
+  },
+  "58410": {
+    "char": "",
+    "unicode": "U+E42A",
+    "glyph_name": "gid58410",
+    "ocr_text": "国",
+    "image": "codepoint_58410_U+E42A_gid58410.png"
+  },
+  "58411": {
+    "char": "",
+    "unicode": "U+E42B",
+    "glyph_name": "gid58411",
+    "ocr_text": "时",
+    "image": "codepoint_58411_U+E42B_gid58411.png"
+  },
+  "58412": {
+    "char": "",
+    "unicode": "U+E42C",
+    "glyph_name": "gid58412",
+    "ocr_text": "中",
+    "image": "codepoint_58412_U+E42C_gid58412.png"
+  },
+  "58413": {
+    "char": "",
+    "unicode": "U+E42D",
+    "glyph_name": "gid58413",
+    "ocr_text": "走",
+    "image": "codepoint_58413_U+E42D_gid58413.png"
+  },
+  "58414": {
+    "char": "",
+    "unicode": "U+E42E",
+    "glyph_name": "gid58414",
+    "ocr_text": "么",
+    "image": "codepoint_58414_U+E42E_gid58414.png"
+  },
+  "58415": {
+    "char": "",
+    "unicode": "U+E42F",
+    "glyph_name": "gid58415",
+    "ocr_text": "何",
+    "image": "codepoint_58415_U+E42F_gid58415.png"
+  },
+  "58416": {
+    "char": "",
+    "unicode": "U+E430",
+    "glyph_name": "gid58416",
+    "ocr_text": "口",
+    "image": "codepoint_58416_U+E430_gid58416.png"
+  },
+  "58417": {
+    "char": "",
+    "unicode": "U+E431",
+    "glyph_name": "gid58417",
+    "ocr_text": "小",
+    "image": "codepoint_58417_U+E431_gid58417.png"
+  },
+  "58418": {
+    "char": "",
+    "unicode": "U+E432",
+    "glyph_name": "gid58418",
+    "ocr_text": "向",
+    "image": "codepoint_58418_U+E432_gid58418.png"
+  },
+  "58419": {
+    "char": "",
+    "unicode": "U+E433",
+    "glyph_name": "gid58419",
+    "ocr_text": "间",
+    "image": "codepoint_58419_U+E433_gid58419.png"
+  },
+  "58420": {
+    "char": "",
+    "unicode": "U+E434",
+    "glyph_name": "gid58420",
+    "ocr_text": "轻",
+    "image": "codepoint_58420_U+E434_gid58420.png"
+  },
+  "58421": {
+    "char": "",
+    "unicode": "U+E435",
+    "glyph_name": "gid58421",
+    "ocr_text": "T",
+    "image": "codepoint_58421_U+E435_gid58421.png"
+  },
+  "58422": {
+    "char": "",
+    "unicode": "U+E436",
+    "glyph_name": "gid58422",
+    "ocr_text": "d",
+    "image": "codepoint_58422_U+E436_gid58422.png"
+  },
+  "58423": {
+    "char": "",
+    "unicode": "U+E437",
+    "glyph_name": "gid58423",
+    "ocr_text": "神",
+    "image": "codepoint_58423_U+E437_gid58423.png"
+  },
+  "58424": {
+    "char": "",
+    "unicode": "U+E438",
+    "glyph_name": "gid58424",
+    "ocr_text": "下",
+    "image": "codepoint_58424_U+E438_gid58424.png"
+  },
+  "58425": {
+    "char": "",
+    "unicode": "U+E439",
+    "glyph_name": "gid58425",
+    "ocr_text": "间",
+    "image": "codepoint_58425_U+E439_gid58425.png"
+  },
+  "58426": {
+    "char": "",
+    "unicode": "U+E43A",
+    "glyph_name": "gid58426",
+    "ocr_text": "车",
+    "image": "codepoint_58426_U+E43A_gid58426.png"
+  },
+  "58427": {
+    "char": "",
+    "unicode": "U+E43B",
+    "glyph_name": "gid58427",
+    "ocr_text": "f",
+    "image": "codepoint_58427_U+E43B_gid58427.png"
+  },
+  "58428": {
+    "char": "",
+    "unicode": "U+E43C",
+    "glyph_name": "gid58428",
+    "ocr_text": "G",
+    "image": "codepoint_58428_U+E43C_gid58428.png"
+  },
+  "58429": {
+    "char": "",
+    "unicode": "U+E43D",
+    "glyph_name": "gid58429",
+    "ocr_text": "度",
+    "image": "codepoint_58429_U+E43D_gid58429.png"
+  },
+  "58430": {
+    "char": "",
+    "unicode": "U+E43E",
+    "glyph_name": "gid58430",
+    "ocr_text": "D",
+    "image": "codepoint_58430_U+E43E_gid58430.png"
+  },
+  "58431": {
+    "char": "",
+    "unicode": "U+E43F",
+    "glyph_name": "gid58431",
+    "ocr_text": "Y",
+    "image": "codepoint_58431_U+E43F_gid58431.png"
+  },
+  "58432": {
+    "char": "",
+    "unicode": "U+E440",
+    "glyph_name": "gid58432",
+    "ocr_text": "大",
+    "image": "codepoint_58432_U+E440_gid58432.png"
+  },
+  "58433": {
+    "char": "",
+    "unicode": "U+E441",
+    "glyph_name": "gid58433",
+    "ocr_text": "面",
+    "image": "codepoint_58433_U+E441_gid58433.png"
+  },
+  "58434": {
+    "char": "",
+    "unicode": "U+E442",
+    "glyph_name": "gid58434",
+    "ocr_text": "远",
+    "image": "codepoint_58434_U+E442_gid58434.png"
+  },
+  "58435": {
+    "char": "",
+    "unicode": "U+E443",
+    "glyph_name": "gid58435",
+    "ocr_text": "就",
+    "image": "codepoint_58435_U+E443_gid58435.png"
+  },
+  "58436": {
+    "char": "",
+    "unicode": "U+E444",
+    "glyph_name": "gid58436",
+    "ocr_text": "写",
+    "image": "codepoint_58436_U+E444_gid58436.png"
+  },
+  "58437": {
+    "char": "",
+    "unicode": "U+E445",
+    "glyph_name": "gid58437",
+    "ocr_text": "j",
+    "image": "codepoint_58437_U+E445_gid58437.png"
+  },
+  "58438": {
+    "char": "",
+    "unicode": "U+E446",
+    "glyph_name": "gid58438",
+    "ocr_text": "给",
+    "image": "codepoint_58438_U+E446_gid58438.png"
+  },
+  "58439": {
+    "char": "",
+    "unicode": "U+E447",
+    "glyph_name": "gid58439",
+    "ocr_text": "通",
+    "image": "codepoint_58439_U+E447_gid58439.png"
+  },
+  "58440": {
+    "char": "",
+    "unicode": "U+E448",
+    "glyph_name": "gid58440",
+    "ocr_text": "起",
+    "image": "codepoint_58440_U+E448_gid58440.png"
+  },
+  "58441": {
+    "char": "",
+    "unicode": "U+E449",
+    "glyph_name": "gid58441",
+    "ocr_text": "买",
+    "image": "codepoint_58441_U+E449_gid58441.png"
+  },
+  "58442": {
+    "char": "",
+    "unicode": "U+E44A",
+    "glyph_name": "gid58442",
+    "ocr_text": "E",
+    "image": "codepoint_58442_U+E44A_gid58442.png"
+  },
+  "58444": {
+    "char": "",
+    "unicode": "U+E44C",
+    "glyph_name": "gid58444",
+    "ocr_text": "它",
+    "image": "codepoint_58444_U+E44C_gid58444.png"
+  },
+  "58445": {
+    "char": "",
+    "unicode": "U+E44D",
+    "glyph_name": "gid58445",
+    "ocr_text": "去",
+    "image": "codepoint_58445_U+E44D_gid58445.png"
+  },
+  "58446": {
+    "char": "",
+    "unicode": "U+E44E",
+    "glyph_name": "gid58446",
+    "ocr_text": "S",
+    "image": "codepoint_58446_U+E44E_gid58446.png"
+  },
+  "58447": {
+    "char": "",
+    "unicode": "U+E44F",
+    "glyph_name": "gid58447",
+    "ocr_text": "到",
+    "image": "codepoint_58447_U+E44F_gid58447.png"
+  },
+  "58448": {
+    "char": "",
+    "unicode": "U+E450",
+    "glyph_name": "gid58448",
+    "ocr_text": "道",
+    "image": "codepoint_58448_U+E450_gid58448.png"
+  },
+  "58449": {
+    "char": "",
+    "unicode": "U+E451",
+    "glyph_name": "gid58449",
+    "ocr_text": "数",
+    "image": "codepoint_58449_U+E451_gid58449.png"
+  },
+  "58450": {
+    "char": "",
+    "unicode": "U+E452",
+    "glyph_name": "gid58450",
+    "ocr_text": "吃",
+    "image": "codepoint_58450_U+E452_gid58450.png"
+  },
+  "58451": {
+    "char": "",
+    "unicode": "U+E453",
+    "glyph_name": "gid58451",
+    "ocr_text": "们",
+    "image": "codepoint_58451_U+E453_gid58451.png"
+  },
+  "58452": {
+    "char": "",
+    "unicode": "U+E454",
+    "glyph_name": "gid58452",
+    "ocr_text": "加",
+    "image": "codepoint_58452_U+E454_gid58452.png"
+  },
+  "58453": {
+    "char": "",
+    "unicode": "U+E455",
+    "glyph_name": "gid58453",
+    "ocr_text": "p",
+    "image": "codepoint_58453_U+E455_gid58453.png"
+  },
+  "58454": {
+    "char": "",
+    "unicode": "U+E456",
+    "glyph_name": "gid58454",
+    "ocr_text": "是",
+    "image": "codepoint_58454_U+E456_gid58454.png"
+  },
+  "58455": {
+    "char": "",
+    "unicode": "U+E457",
+    "glyph_name": "gid58455",
+    "ocr_text": "无",
+    "image": "codepoint_58455_U+E457_gid58455.png"
+  },
+  "58456": {
+    "char": "",
+    "unicode": "U+E458",
+    "glyph_name": "gid58456",
+    "ocr_text": "把",
+    "image": "codepoint_58456_U+E458_gid58456.png"
+  },
+  "58457": {
+    "char": "",
+    "unicode": "U+E459",
+    "glyph_name": "gid58457",
+    "ocr_text": "事",
+    "image": "codepoint_58457_U+E459_gid58457.png"
+  },
+  "58458": {
+    "char": "",
+    "unicode": "U+E45A",
+    "glyph_name": "gid58458",
+    "ocr_text": "西",
+    "image": "codepoint_58458_U+E45A_gid58458.png"
+  },
+  "58459": {
+    "char": "",
+    "unicode": "U+E45B",
+    "glyph_name": "gid58459",
+    "ocr_text": "多",
+    "image": "codepoint_58459_U+E45B_gid58459.png"
+  },
+  "58460": {
+    "char": "",
+    "unicode": "U+E45C",
+    "glyph_name": "gid58460",
+    "ocr_text": "界",
+    "image": "codepoint_58460_U+E45C_gid58460.png"
+  },
+  "58462": {
+    "char": "",
+    "unicode": "U+E45E",
+    "glyph_name": "gid58462",
+    "ocr_text": "发",
+    "image": "codepoint_58462_U+E45E_gid58462.png"
+  },
+  "58463": {
+    "char": "",
+    "unicode": "U+E45F",
+    "glyph_name": "gid58463",
+    "ocr_text": "新",
+    "image": "codepoint_58463_U+E45F_gid58463.png"
+  },
+  "58464": {
+    "char": "",
+    "unicode": "U+E460",
+    "glyph_name": "gid58464",
+    "ocr_text": "外",
+    "image": "codepoint_58464_U+E460_gid58464.png"
+  },
+  "58465": {
+    "char": "",
+    "unicode": "U+E461",
+    "glyph_name": "gid58465",
+    "ocr_text": "活",
+    "image": "codepoint_58465_U+E461_gid58465.png"
+  },
+  "58466": {
+    "char": "",
+    "unicode": "U+E462",
+    "glyph_name": "gid58466",
+    "ocr_text": "解",
+    "image": "codepoint_58466_U+E462_gid58466.png"
+  },
+  "58467": {
+    "char": "",
+    "unicode": "U+E463",
+    "glyph_name": "gid58467",
+    "ocr_text": "孩",
+    "image": "codepoint_58467_U+E463_gid58467.png"
+  },
+  "58468": {
+    "char": "",
+    "unicode": "U+E464",
+    "glyph_name": "gid58468",
+    "ocr_text": "只",
+    "image": "codepoint_58468_U+E464_gid58468.png"
+  },
+  "58469": {
+    "char": "",
+    "unicode": "U+E465",
+    "glyph_name": "gid58469",
+    "ocr_text": "作",
+    "image": "codepoint_58469_U+E465_gid58469.png"
+  },
+  "58470": {
+    "char": "",
+    "unicode": "U+E466",
+    "glyph_name": "gid58470",
+    "ocr_text": "前",
+    "image": "codepoint_58470_U+E466_gid58470.png"
+  },
+  "58471": {
+    "char": "",
+    "unicode": "U+E467",
+    "glyph_name": "gid58471",
+    "ocr_text": "Y",
+    "image": "codepoint_58471_U+E467_gid58471.png"
+  },
+  "58472": {
+    "char": "",
+    "unicode": "U+E468",
+    "glyph_name": "gid58472",
+    "ocr_text": "尔",
+    "image": "codepoint_58472_U+E468_gid58472.png"
+  },
+  "58473": {
+    "char": "",
+    "unicode": "U+E469",
+    "glyph_name": "gid58473",
+    "ocr_text": "经",
+    "image": "codepoint_58473_U+E469_gid58473.png"
+  },
+  "58475": {
+    "char": "",
+    "unicode": "U+E46B",
+    "glyph_name": "gid58475",
+    "ocr_text": "u",
+    "image": "codepoint_58475_U+E46B_gid58475.png"
+  },
+  "58476": {
+    "char": "",
+    "unicode": "U+E46C",
+    "glyph_name": "gid58476",
+    "ocr_text": "心",
+    "image": "codepoint_58476_U+E46C_gid58476.png"
+  },
+  "58477": {
+    "char": "",
+    "unicode": "U+E46D",
+    "glyph_name": "gid58477",
+    "ocr_text": "告",
+    "image": "codepoint_58477_U+E46D_gid58477.png"
+  },
+  "58478": {
+    "char": "",
+    "unicode": "U+E46E",
+    "glyph_name": "gid58478",
+    "ocr_text": "x",
+    "image": "codepoint_58478_U+E46E_gid58478.png"
+  },
+  "58479": {
+    "char": "",
+    "unicode": "U+E46F",
+    "glyph_name": "gid58479",
+    "ocr_text": "拿",
+    "image": "codepoint_58479_U+E46F_gid58479.png"
+  },
+  "58480": {
+    "char": "",
+    "unicode": "U+E470",
+    "glyph_name": "gid58480",
+    "ocr_text": "Q",
+    "image": "codepoint_58480_U+E470_gid58480.png"
+  },
+  "58481": {
+    "char": "",
+    "unicode": "U+E471",
+    "glyph_name": "gid58481",
+    "ocr_text": "民",
+    "image": "codepoint_58481_U+E471_gid58481.png"
+  },
+  "58482": {
+    "char": "",
+    "unicode": "U+E472",
+    "glyph_name": "gid58482",
+    "ocr_text": "全",
+    "image": "codepoint_58482_U+E472_gid58482.png"
+  },
+  "58483": {
+    "char": "",
+    "unicode": "U+E473",
+    "glyph_name": "gid58483",
+    "ocr_text": "这",
+    "image": "codepoint_58483_U+E473_gid58483.png"
+  },
+  "58484": {
+    "char": "",
+    "unicode": "U+E474",
+    "glyph_name": "gid58484",
+    "ocr_text": "9",
+    "image": "codepoint_58484_U+E474_gid58484.png"
+  },
+  "58485": {
+    "char": "",
+    "unicode": "U+E475",
+    "glyph_name": "gid58485",
+    "ocr_text": "果",
+    "image": "codepoint_58485_U+E475_gid58485.png"
+  },
+  "58486": {
+    "char": "",
+    "unicode": "U+E476",
+    "glyph_name": "gid58486",
+    "ocr_text": "安",
+    "image": "codepoint_58486_U+E476_gid58486.png"
+  },
+  "58488": {
+    "char": "",
+    "unicode": "U+E478",
+    "glyph_name": "gid58488",
+    "ocr_text": "i",
+    "image": "codepoint_58488_U+E478_gid58488.png"
+  },
+  "58489": {
+    "char": "",
+    "unicode": "U+E479",
+    "glyph_name": "gid58489",
+    "ocr_text": "母",
+    "image": "codepoint_58489_U+E479_gid58489.png"
+  },
+  "58490": {
+    "char": "",
+    "unicode": "U+E47A",
+    "glyph_name": "gid58490",
+    "ocr_text": "8",
+    "image": "codepoint_58490_U+E47A_gid58490.png"
+  },
+  "58491": {
+    "char": "",
+    "unicode": "U+E47B",
+    "glyph_name": "gid58491",
+    "ocr_text": "r",
+    "image": "codepoint_58491_U+E47B_gid58491.png"
+  },
+  "58492": {
+    "char": "",
+    "unicode": "U+E47C",
+    "glyph_name": "gid58492",
+    "ocr_text": "说",
+    "image": "codepoint_58492_U+E47C_gid58492.png"
+  },
+  "58493": {
+    "char": "",
+    "unicode": "U+E47D",
+    "glyph_name": "gid58493",
+    "ocr_text": "任",
+    "image": "codepoint_58493_U+E47D_gid58493.png"
+  },
+  "58494": {
+    "char": "",
+    "unicode": "U+E47E",
+    "glyph_name": "gid58494",
+    "ocr_text": "先",
+    "image": "codepoint_58494_U+E47E_gid58494.png"
+  },
+  "58495": {
+    "char": "",
+    "unicode": "U+E47F",
+    "glyph_name": "gid58495",
+    "ocr_text": "和",
+    "image": "codepoint_58495_U+E47F_gid58495.png"
+  },
+  "58496": {
+    "char": "",
+    "unicode": "U+E480",
+    "glyph_name": "gid58496",
+    "ocr_text": "也",
+    "image": "codepoint_58496_U+E480_gid58496.png"
+  },
+  "58497": {
+    "char": "",
+    "unicode": "U+E481",
+    "glyph_name": "gid58497",
+    "ocr_text": "C",
+    "image": "codepoint_58497_U+E481_gid58497.png"
+  },
+  "58498": {
+    "char": "",
+    "unicode": "U+E482",
+    "glyph_name": "gid58498",
+    "ocr_text": "张",
+    "image": "codepoint_58498_U+E482_gid58498.png"
+  },
+  "58499": {
+    "char": "",
+    "unicode": "U+E483",
+    "glyph_name": "gid58499",
+    "ocr_text": "战",
+    "image": "codepoint_58499_U+E483_gid58499.png"
+  },
+  "58500": {
+    "char": "",
+    "unicode": "U+E484",
+    "glyph_name": "gid58500",
+    "ocr_text": "场",
+    "image": "codepoint_58500_U+E484_gid58500.png"
+  },
+  "58501": {
+    "char": "",
+    "unicode": "U+E485",
+    "glyph_name": "gid58501",
+    "ocr_text": "8",
+    "image": "codepoint_58501_U+E485_gid58501.png"
+  },
+  "58502": {
+    "char": "",
+    "unicode": "U+E486",
+    "glyph_name": "gid58502",
+    "ocr_text": "像",
+    "image": "codepoint_58502_U+E486_gid58502.png"
+  },
+  "58503": {
+    "char": "",
+    "unicode": "U+E487",
+    "glyph_name": "gid58503",
+    "ocr_text": "C",
+    "image": "codepoint_58503_U+E487_gid58503.png"
+  },
+  "58504": {
+    "char": "",
+    "unicode": "U+E488",
+    "glyph_name": "gid58504",
+    "ocr_text": "Q",
+    "image": "codepoint_58504_U+E488_gid58504.png"
+  },
+  "58505": {
+    "char": "",
+    "unicode": "U+E489",
+    "glyph_name": "gid58505",
+    "ocr_text": "你",
+    "image": "codepoint_58505_U+E489_gid58505.png"
+  },
+  "58506": {
+    "char": "",
+    "unicode": "U+E48A",
+    "glyph_name": "gid58506",
+    "ocr_text": "使",
+    "image": "codepoint_58506_U+E48A_gid58506.png"
+  },
+  "58508": {
+    "char": "",
+    "unicode": "U+E48C",
+    "glyph_name": "gid58508",
+    "ocr_text": "样",
+    "image": "codepoint_58508_U+E48C_gid58508.png"
+  },
+  "58509": {
+    "char": "",
+    "unicode": "U+E48D",
+    "glyph_name": "gid58509",
+    "ocr_text": "总",
+    "image": "codepoint_58509_U+E48D_gid58509.png"
+  },
+  "58510": {
+    "char": "",
+    "unicode": "U+E48E",
+    "glyph_name": "gid58510",
+    "ocr_text": "目",
+    "image": "codepoint_58510_U+E48E_gid58510.png"
+  },
+  "58511": {
+    "char": "",
+    "unicode": "U+E48F",
+    "glyph_name": "gid58511",
+    "ocr_text": "X",
+    "image": "codepoint_58511_U+E48F_gid58511.png"
+  },
+  "58512": {
+    "char": "",
+    "unicode": "U+E490",
+    "glyph_name": "gid58512",
+    "ocr_text": "性",
+    "image": "codepoint_58512_U+E490_gid58512.png"
+  },
+  "58513": {
+    "char": "",
+    "unicode": "U+E491",
+    "glyph_name": "gid58513",
+    "ocr_text": "处",
+    "image": "codepoint_58513_U+E491_gid58513.png"
+  },
+  "58514": {
+    "char": "",
+    "unicode": "U+E492",
+    "glyph_name": "gid58514",
+    "ocr_text": "音",
+    "image": "codepoint_58514_U+E492_gid58514.png"
+  },
+  "58515": {
+    "char": "",
+    "unicode": "U+E493",
+    "glyph_name": "gid58515",
+    "ocr_text": "头",
+    "image": "codepoint_58515_U+E493_gid58515.png"
+  },
+  "58517": {
+    "char": "",
+    "unicode": "U+E495",
+    "glyph_name": "gid58517",
+    "ocr_text": "应",
+    "image": "codepoint_58517_U+E495_gid58517.png"
+  },
+  "58518": {
+    "char": "",
+    "unicode": "U+E496",
+    "glyph_name": "gid58518",
+    "ocr_text": "乐",
+    "image": "codepoint_58518_U+E496_gid58518.png"
+  },
+  "58519": {
+    "char": "",
+    "unicode": "U+E497",
+    "glyph_name": "gid58519",
+    "ocr_text": "关",
+    "image": "codepoint_58519_U+E497_gid58519.png"
+  },
+  "58520": {
+    "char": "",
+    "unicode": "U+E498",
+    "glyph_name": "gid58520",
+    "ocr_text": "能",
+    "image": "codepoint_58520_U+E498_gid58520.png"
+  },
+  "58521": {
+    "char": "",
+    "unicode": "U+E499",
+    "glyph_name": "gid58521",
+    "ocr_text": "化",
+    "image": "codepoint_58521_U+E499_gid58521.png"
+  },
+  "58522": {
+    "char": "",
+    "unicode": "U+E49A",
+    "glyph_name": "gid58522",
+    "ocr_text": "",
+    "image": "codepoint_58522_U+E49A_gid58522.png"
+  },
+  "58523": {
+    "char": "",
+    "unicode": "U+E49B",
+    "glyph_name": "gid58523",
+    "ocr_text": "当",
+    "image": "codepoint_58523_U+E49B_gid58523.png"
+  },
+  "58524": {
+    "char": "",
+    "unicode": "U+E49C",
+    "glyph_name": "gid58524",
+    "ocr_text": "名",
+    "image": "codepoint_58524_U+E49C_gid58524.png"
+  },
+  "58525": {
+    "char": "",
+    "unicode": "U+E49D",
+    "glyph_name": "gid58525",
+    "ocr_text": "手",
+    "image": "codepoint_58525_U+E49D_gid58525.png"
+  },
+  "58526": {
+    "char": "",
+    "unicode": "U+E49E",
+    "glyph_name": "gid58526",
+    "ocr_text": "4",
+    "image": "codepoint_58526_U+E49E_gid58526.png"
+  },
+  "58527": {
+    "char": "",
+    "unicode": "U+E49F",
+    "glyph_name": "gid58527",
+    "ocr_text": "重",
+    "image": "codepoint_58527_U+E49F_gid58527.png"
+  },
+  "58528": {
+    "char": "",
+    "unicode": "U+E4A0",
+    "glyph_name": "gid58528",
+    "ocr_text": "了",
+    "image": "codepoint_58528_U+E4A0_gid58528.png"
+  },
+  "58529": {
+    "char": "",
+    "unicode": "U+E4A1",
+    "glyph_name": "gid58529",
+    "ocr_text": "声",
+    "image": "codepoint_58529_U+E4A1_gid58529.png"
+  },
+  "58530": {
+    "char": "",
+    "unicode": "U+E4A2",
+    "glyph_name": "gid58530",
+    "ocr_text": "力",
+    "image": "codepoint_58530_U+E4A2_gid58530.png"
+  },
+  "58531": {
+    "char": "",
+    "unicode": "U+E4A3",
+    "glyph_name": "gid58531",
+    "ocr_text": "友",
+    "image": "codepoint_58531_U+E4A3_gid58531.png"
+  },
+  "58532": {
+    "char": "",
+    "unicode": "U+E4A4",
+    "glyph_name": "gid58532",
+    "ocr_text": "然",
+    "image": "codepoint_58532_U+E4A4_gid58532.png"
+  },
+  "58533": {
+    "char": "",
+    "unicode": "U+E4A5",
+    "glyph_name": "gid58533",
+    "ocr_text": "生",
+    "image": "codepoint_58533_U+E4A5_gid58533.png"
+  },
+  "58534": {
+    "char": "",
+    "unicode": "U+E4A6",
+    "glyph_name": "gid58534",
+    "ocr_text": "代",
+    "image": "codepoint_58534_U+E4A6_gid58534.png"
+  },
+  "58535": {
+    "char": "",
+    "unicode": "U+E4A7",
+    "glyph_name": "gid58535",
+    "ocr_text": "内",
+    "image": "codepoint_58535_U+E4A7_gid58535.png"
+  },
+  "58536": {
+    "char": "",
+    "unicode": "U+E4A8",
+    "glyph_name": "gid58536",
+    "ocr_text": "里",
+    "image": "codepoint_58536_U+E4A8_gid58536.png"
+  },
+  "58537": {
+    "char": "",
+    "unicode": "U+E4A9",
+    "glyph_name": "gid58537",
+    "ocr_text": "本",
+    "image": "codepoint_58537_U+E4A9_gid58537.png"
+  },
+  "58538": {
+    "char": "",
+    "unicode": "U+E4AA",
+    "glyph_name": "gid58538",
+    "ocr_text": "回",
+    "image": "codepoint_58538_U+E4AA_gid58538.png"
+  },
+  "58539": {
+    "char": "",
+    "unicode": "U+E4AB",
+    "glyph_name": "gid58539",
+    "ocr_text": "真",
+    "image": "codepoint_58539_U+E4AB_gid58539.png"
+  },
+  "58540": {
+    "char": "",
+    "unicode": "U+E4AC",
+    "glyph_name": "gid58540",
+    "ocr_text": "人",
+    "image": "codepoint_58540_U+E4AC_gid58540.png"
+  },
+  "58541": {
+    "char": "",
+    "unicode": "U+E4AD",
+    "glyph_name": "gid58541",
+    "ocr_text": "师",
+    "image": "codepoint_58541_U+E4AD_gid58541.png"
+  },
+  "58542": {
+    "char": "",
+    "unicode": "U+E4AE",
+    "glyph_name": "gid58542",
+    "ocr_text": "象",
+    "image": "codepoint_58542_U+E4AE_gid58542.png"
+  },
+  "58544": {
+    "char": "",
+    "unicode": "U+E4B0",
+    "glyph_name": "gid58544",
+    "ocr_text": "O",
+    "image": "codepoint_58544_U+E4B0_gid58544.png"
+  },
+  "58545": {
+    "char": "",
+    "unicode": "U+E4B1",
+    "glyph_name": "gid58545",
+    "ocr_text": "点",
+    "image": "codepoint_58545_U+E4B1_gid58545.png"
+  },
+  "58546": {
+    "char": "",
+    "unicode": "U+E4B2",
+    "glyph_name": "gid58546",
+    "ocr_text": "R",
+    "image": "codepoint_58546_U+E4B2_gid58546.png"
+  },
+  "58547": {
+    "char": "",
+    "unicode": "U+E4B3",
+    "glyph_name": "gid58547",
+    "ocr_text": "亲",
+    "image": "codepoint_58547_U+E4B3_gid58547.png"
+  },
+  "58548": {
+    "char": "",
+    "unicode": "U+E4B4",
+    "glyph_name": "gid58548",
+    "ocr_text": "V",
+    "image": "codepoint_58548_U+E4B4_gid58548.png"
+  },
+  "58549": {
+    "char": "",
+    "unicode": "U+E4B5",
+    "glyph_name": "gid58549",
+    "ocr_text": "种",
+    "image": "codepoint_58549_U+E4B5_gid58549.png"
+  },
+  "58550": {
+    "char": "",
+    "unicode": "U+E4B6",
+    "glyph_name": "gid58550",
+    "ocr_text": "动",
+    "image": "codepoint_58550_U+E4B6_gid58550.png"
+  },
+  "58551": {
+    "char": "",
+    "unicode": "U+E4B7",
+    "glyph_name": "gid58551",
+    "ocr_text": "英",
+    "image": "codepoint_58551_U+E4B7_gid58551.png"
+  },
+  "58552": {
+    "char": "",
+    "unicode": "U+E4B8",
+    "glyph_name": "gid58552",
+    "ocr_text": "可",
+    "image": "codepoint_58552_U+E4B8_gid58552.png"
+  },
+  "58553": {
+    "char": "",
+    "unicode": "U+E4B9",
+    "glyph_name": "gid58553",
+    "ocr_text": "Z",
+    "image": "codepoint_58553_U+E4B9_gid58553.png"
+  },
+  "58554": {
+    "char": "",
+    "unicode": "U+E4BA",
+    "glyph_name": "gid58554",
+    "ocr_text": "h",
+    "image": "codepoint_58554_U+E4BA_gid58554.png"
+  },
+  "58555": {
+    "char": "",
+    "unicode": "U+E4BB",
+    "glyph_name": "gid58555",
+    "ocr_text": "x",
+    "image": "codepoint_58555_U+E4BB_gid58555.png"
+  },
+  "58556": {
+    "char": "",
+    "unicode": "U+E4BC",
+    "glyph_name": "gid58556",
+    "ocr_text": "做",
+    "image": "codepoint_58556_U+E4BC_gid58556.png"
+  },
+  "58557": {
+    "char": "",
+    "unicode": "U+E4BD",
+    "glyph_name": "gid58557",
+    "ocr_text": "",
+    "image": "codepoint_58557_U+E4BD_gid58557.png"
+  },
+  "58558": {
+    "char": "",
+    "unicode": "U+E4BE",
+    "glyph_name": "gid58558",
+    "ocr_text": "边",
+    "image": "codepoint_58558_U+E4BE_gid58558.png"
+  },
+  "58559": {
+    "char": "",
+    "unicode": "U+E4BF",
+    "glyph_name": "gid58559",
+    "ocr_text": "高",
+    "image": "codepoint_58559_U+E4BF_gid58559.png"
+  },
+  "58560": {
+    "char": "",
+    "unicode": "U+E4C0",
+    "glyph_name": "gid58560",
+    "ocr_text": "有",
+    "image": "codepoint_58560_U+E4C0_gid58560.png"
+  },
+  "58561": {
+    "char": "",
+    "unicode": "U+E4C1",
+    "glyph_name": "gid58561",
+    "ocr_text": "B",
+    "image": "codepoint_58561_U+E4C1_gid58561.png"
+  },
+  "58562": {
+    "char": "",
+    "unicode": "U+E4C2",
+    "glyph_name": "gid58562",
+    "ocr_text": "为",
+    "image": "codepoint_58562_U+E4C2_gid58562.png"
+  },
+  "58563": {
+    "char": "",
+    "unicode": "U+E4C3",
+    "glyph_name": "gid58563",
+    "ocr_text": "其",
+    "image": "codepoint_58563_U+E4C3_gid58563.png"
+  },
+  "58564": {
+    "char": "",
+    "unicode": "U+E4C4",
+    "glyph_name": "gid58564",
+    "ocr_text": "昌",
+    "image": "codepoint_58564_U+E4C4_gid58564.png"
+  },
+  "58565": {
+    "char": "",
+    "unicode": "U+E4C5",
+    "glyph_name": "gid58565",
+    "ocr_text": "年",
+    "image": "codepoint_58565_U+E4C5_gid58565.png"
+  },
+  "58566": {
+    "char": "",
+    "unicode": "U+E4C6",
+    "glyph_name": "gid58566",
+    "ocr_text": "马",
+    "image": "codepoint_58566_U+E4C6_gid58566.png"
+  },
+  "58567": {
+    "char": "",
+    "unicode": "U+E4C7",
+    "glyph_name": "gid58567",
+    "ocr_text": "i",
+    "image": "codepoint_58567_U+E4C7_gid58567.png"
+  },
+  "58568": {
+    "char": "",
+    "unicode": "U+E4C8",
+    "glyph_name": "gid58568",
+    "ocr_text": "出",
+    "image": "codepoint_58568_U+E4C8_gid58568.png"
+  },
+  "58569": {
+    "char": "",
+    "unicode": "U+E4C9",
+    "glyph_name": "gid58569",
+    "ocr_text": "接",
+    "image": "codepoint_58569_U+E4C9_gid58569.png"
+  },
+  "58570": {
+    "char": "",
+    "unicode": "U+E4CA",
+    "glyph_name": "gid58570",
+    "ocr_text": "至",
+    "image": "codepoint_58570_U+E4CA_gid58570.png"
+  },
+  "58571": {
+    "char": "",
+    "unicode": "U+E4CB",
+    "glyph_name": "gid58571",
+    "ocr_text": "h",
+    "image": "codepoint_58571_U+E4CB_gid58571.png"
+  },
+  "58572": {
+    "char": "",
+    "unicode": "U+E4CC",
+    "glyph_name": "gid58572",
+    "ocr_text": "",
+    "image": "codepoint_58572_U+E4CC_gid58572.png"
+  },
+  "58573": {
+    "char": "",
+    "unicode": "U+E4CD",
+    "glyph_name": "gid58573",
+    "ocr_text": "万",
+    "image": "codepoint_58573_U+E4CD_gid58573.png"
+  },
+  "58574": {
+    "char": "",
+    "unicode": "U+E4CE",
+    "glyph_name": "gid58574",
+    "ocr_text": "感",
+    "image": "codepoint_58574_U+E4CE_gid58574.png"
+  },
+  "58575": {
+    "char": "",
+    "unicode": "U+E4CF",
+    "glyph_name": "gid58575",
+    "ocr_text": "所",
+    "image": "codepoint_58575_U+E4CF_gid58575.png"
+  },
+  "58576": {
+    "char": "",
+    "unicode": "U+E4D0",
+    "glyph_name": "gid58576",
+    "ocr_text": "明",
+    "image": "codepoint_58576_U+E4D0_gid58576.png"
+  },
+  "58577": {
+    "char": "",
+    "unicode": "U+E4D1",
+    "glyph_name": "gid58577",
+    "ocr_text": "者",
+    "image": "codepoint_58577_U+E4D1_gid58577.png"
+  },
+  "58578": {
+    "char": "",
+    "unicode": "U+E4D2",
+    "glyph_name": "gid58578",
+    "ocr_text": "穆",
+    "image": "codepoint_58578_U+E4D2_gid58578.png"
+  },
+  "58579": {
+    "char": "",
+    "unicode": "U+E4D3",
+    "glyph_name": "gid58579",
+    "ocr_text": "F",
+    "image": "codepoint_58579_U+E4D3_gid58579.png"
+  },
+  "58580": {
+    "char": "",
+    "unicode": "U+E4D4",
+    "glyph_name": "gid58580",
+    "ocr_text": "住",
+    "image": "codepoint_58580_U+E4D4_gid58580.png"
+  },
+  "58581": {
+    "char": "",
+    "unicode": "U+E4D5",
+    "glyph_name": "gid58581",
+    "ocr_text": "字",
+    "image": "codepoint_58581_U+E4D5_gid58581.png"
+  },
+  "58582": {
+    "char": "",
+    "unicode": "U+E4D6",
+    "glyph_name": "gid58582",
+    "ocr_text": "",
+    "image": "codepoint_58582_U+E4D6_gid58582.png"
+  },
+  "58583": {
+    "char": "",
+    "unicode": "U+E4D7",
+    "glyph_name": "gid58583",
+    "ocr_text": "分",
+    "image": "codepoint_58583_U+E4D7_gid58583.png"
+  },
+  "58584": {
+    "char": "",
+    "unicode": "U+E4D8",
+    "glyph_name": "gid58584",
+    "ocr_text": "意",
+    "image": "codepoint_58584_U+E4D8_gid58584.png"
+  },
+  "58585": {
+    "char": "",
+    "unicode": "U+E4D9",
+    "glyph_name": "gid58585",
+    "ocr_text": "更",
+    "image": "codepoint_58585_U+E4D9_gid58585.png"
+  },
+  "58586": {
+    "char": "",
+    "unicode": "U+E4DA",
+    "glyph_name": "gid58586",
+    "ocr_text": "其",
+    "image": "codepoint_58586_U+E4DA_gid58586.png"
+  },
+  "58587": {
+    "char": "",
+    "unicode": "U+E4DB",
+    "glyph_name": "gid58587",
+    "ocr_text": "n",
+    "image": "codepoint_58587_U+E4DB_gid58587.png"
+  },
+  "58588": {
+    "char": "",
+    "unicode": "U+E4DC",
+    "glyph_name": "gid58588",
+    "ocr_text": "但",
+    "image": "codepoint_58588_U+E4DC_gid58588.png"
+  },
+  "58589": {
+    "char": "",
+    "unicode": "U+E4DD",
+    "glyph_name": "gid58589",
+    "ocr_text": "",
+    "image": "codepoint_58589_U+E4DD_gid58589.png"
+  },
+  "58590": {
+    "char": "",
+    "unicode": "U+E4DE",
+    "glyph_name": "gid58590",
+    "ocr_text": "觉",
+    "image": "codepoint_58590_U+E4DE_gid58590.png"
+  },
+  "58591": {
+    "char": "",
+    "unicode": "U+E4DF",
+    "glyph_name": "gid58591",
+    "ocr_text": "",
+    "image": "codepoint_58591_U+E4DF_gid58591.png"
+  },
+  "58592": {
+    "char": "",
+    "unicode": "U+E4E0",
+    "glyph_name": "gid58592",
+    "ocr_text": "由",
+    "image": "codepoint_58592_U+E4E0_gid58592.png"
+  },
+  "58593": {
+    "char": "",
+    "unicode": "U+E4E1",
+    "glyph_name": "gid58593",
+    "ocr_text": "死",
+    "image": "codepoint_58593_U+E4E1_gid58593.png"
+  },
+  "58594": {
+    "char": "",
+    "unicode": "U+E4E2",
+    "glyph_name": "gid58594",
+    "ocr_text": "家",
+    "image": "codepoint_58594_U+E4E2_gid58594.png"
+  },
+  "58595": {
+    "char": "",
+    "unicode": "U+E4E3",
+    "glyph_name": "gid58595",
+    "ocr_text": "",
+    "image": "codepoint_58595_U+E4E3_gid58595.png"
+  },
+  "58596": {
+    "char": "",
+    "unicode": "U+E4E4",
+    "glyph_name": "gid58596",
+    "ocr_text": "失",
+    "image": "codepoint_58596_U+E4E4_gid58596.png"
+  },
+  "58597": {
+    "char": "",
+    "unicode": "U+E4E5",
+    "glyph_name": "gid58597",
+    "ocr_text": "上",
+    "image": "codepoint_58597_U+E4E5_gid58597.png"
+  },
+  "58598": {
+    "char": "",
+    "unicode": "U+E4E6",
+    "glyph_name": "gid58598",
+    "ocr_text": "L",
+    "image": "codepoint_58598_U+E4E6_gid58598.png"
+  },
+  "58599": {
+    "char": "",
+    "unicode": "U+E4E7",
+    "glyph_name": "gid58599",
+    "ocr_text": "2",
+    "image": "codepoint_58599_U+E4E7_gid58599.png"
+  },
+  "58600": {
+    "char": "",
+    "unicode": "U+E4E8",
+    "glyph_name": "gid58600",
+    "ocr_text": "",
+    "image": "codepoint_58600_U+E4E8_gid58600.png"
+  },
+  "58601": {
+    "char": "",
+    "unicode": "U+E4E9",
+    "glyph_name": "gid58601",
+    "ocr_text": "金",
+    "image": "codepoint_58601_U+E4E9_gid58601.png"
+  },
+  "58602": {
+    "char": "",
+    "unicode": "U+E4EA",
+    "glyph_name": "gid58602",
+    "ocr_text": "",
+    "image": "codepoint_58602_U+E4EA_gid58602.png"
+  },
+  "58603": {
+    "char": "",
+    "unicode": "U+E4EB",
+    "glyph_name": "gid58603",
+    "ocr_text": "身",
+    "image": "codepoint_58603_U+E4EB_gid58603.png"
+  },
+  "58604": {
+    "char": "",
+    "unicode": "U+E4EC",
+    "glyph_name": "gid58604",
+    "ocr_text": "报",
+    "image": "codepoint_58604_U+E4EC_gid58604.png"
+  },
+  "58605": {
+    "char": "",
+    "unicode": "U+E4ED",
+    "glyph_name": "gid58605",
+    "ocr_text": "听",
+    "image": "codepoint_58605_U+E4ED_gid58605.png"
+  },
+  "58606": {
+    "char": "",
+    "unicode": "U+E4EE",
+    "glyph_name": "gid58606",
+    "ocr_text": "w",
+    "image": "codepoint_58606_U+E4EE_gid58606.png"
+  },
+  "58607": {
+    "char": "",
+    "unicode": "U+E4EF",
+    "glyph_name": "gid58607",
+    "ocr_text": "再",
+    "image": "codepoint_58607_U+E4EF_gid58607.png"
+  },
+  "58608": {
+    "char": "",
+    "unicode": "U+E4F0",
+    "glyph_name": "gid58608",
+    "ocr_text": "原",
+    "image": "codepoint_58608_U+E4F0_gid58608.png"
+  },
+  "58609": {
+    "char": "",
+    "unicode": "U+E4F1",
+    "glyph_name": "gid58609",
+    "ocr_text": "",
+    "image": "codepoint_58609_U+E4F1_gid58609.png"
+  },
+  "58610": {
+    "char": "",
+    "unicode": "U+E4F2",
+    "glyph_name": "gid58610",
+    "ocr_text": "海",
+    "image": "codepoint_58610_U+E4F2_gid58610.png"
+  },
+  "58611": {
+    "char": "",
+    "unicode": "U+E4F3",
+    "glyph_name": "gid58611",
+    "ocr_text": "昌",
+    "image": "codepoint_58611_U+E4F3_gid58611.png"
+  },
+  "58612": {
+    "char": "",
+    "unicode": "U+E4F4",
+    "glyph_name": "gid58612",
+    "ocr_text": "很",
+    "image": "codepoint_58612_U+E4F4_gid58612.png"
+  },
+  "58613": {
+    "char": "",
+    "unicode": "U+E4F5",
+    "glyph_name": "gid58613",
+    "ocr_text": "",
+    "image": "codepoint_58613_U+E4F5_gid58613.png"
+  },
+  "58614": {
+    "char": "",
+    "unicode": "U+E4F6",
+    "glyph_name": "gid58614",
+    "ocr_text": "5",
+    "image": "codepoint_58614_U+E4F6_gid58614.png"
+  },
+  "58615": {
+    "char": "",
+    "unicode": "U+E4F7",
+    "glyph_name": "gid58615",
+    "ocr_text": "直",
+    "image": "codepoint_58615_U+E4F7_gid58615.png"
+  },
+  "58616": {
+    "char": "",
+    "unicode": "U+E4F8",
+    "glyph_name": "gid58616",
+    "ocr_text": "位",
+    "image": "codepoint_58616_U+E4F8_gid58616.png"
+  },
+  "58617": {
+    "char": "",
+    "unicode": "U+E4F9",
+    "glyph_name": "gid58617",
+    "ocr_text": "第",
+    "image": "codepoint_58617_U+E4F9_gid58617.png"
+  },
+  "58618": {
+    "char": "",
+    "unicode": "U+E4FA",
+    "glyph_name": "gid58618",
+    "ocr_text": "L",
+    "image": "codepoint_58618_U+E4FA_gid58618.png"
+  },
+  "58619": {
+    "char": "",
+    "unicode": "U+E4FB",
+    "glyph_name": "gid58619",
+    "ocr_text": "个",
+    "image": "codepoint_58619_U+E4FB_gid58619.png"
+  },
+  "58620": {
+    "char": "",
+    "unicode": "U+E4FC",
+    "glyph_name": "gid58620",
+    "ocr_text": "开",
+    "image": "codepoint_58620_U+E4FC_gid58620.png"
+  },
+  "58621": {
+    "char": "",
+    "unicode": "U+E4FD",
+    "glyph_name": "gid58621",
+    "ocr_text": "岁",
+    "image": "codepoint_58621_U+E4FD_gid58621.png"
+  },
+  "58622": {
+    "char": "",
+    "unicode": "U+E4FE",
+    "glyph_name": "gid58622",
+    "ocr_text": "",
+    "image": "codepoint_58622_U+E4FE_gid58622.png"
+  },
+  "58623": {
+    "char": "",
+    "unicode": "U+E4FF",
+    "glyph_name": "gid58623",
+    "ocr_text": "用",
+    "image": "codepoint_58623_U+E4FF_gid58623.png"
+  },
+  "58624": {
+    "char": "",
+    "unicode": "U+E500",
+    "glyph_name": "gid58624",
+    "ocr_text": "都",
+    "image": "codepoint_58624_U+E500_gid58624.png"
+  },
+  "58625": {
+    "char": "",
+    "unicode": "U+E501",
+    "glyph_name": "gid58625",
+    "ocr_text": "乎",
+    "image": "codepoint_58625_U+E501_gid58625.png"
+  },
+  "58626": {
+    "char": "",
+    "unicode": "U+E502",
+    "glyph_name": "gid58626",
+    "ocr_text": "回",
+    "image": "codepoint_58626_U+E502_gid58626.png"
+  },
+  "58627": {
+    "char": "",
+    "unicode": "U+E503",
+    "glyph_name": "gid58627",
+    "ocr_text": "同",
+    "image": "codepoint_58627_U+E503_gid58627.png"
+  },
+  "58628": {
+    "char": "",
+    "unicode": "U+E504",
+    "glyph_name": "gid58628",
+    "ocr_text": "3",
+    "image": "codepoint_58628_U+E504_gid58628.png"
+  },
+  "58629": {
+    "char": "",
+    "unicode": "U+E505",
+    "glyph_name": "gid58629",
+    "ocr_text": "次",
+    "image": "codepoint_58629_U+E505_gid58629.png"
+  },
+  "58630": {
+    "char": "",
+    "unicode": "U+E506",
+    "glyph_name": "gid58630",
+    "ocr_text": "",
+    "image": "codepoint_58630_U+E506_gid58630.png"
+  },
+  "58632": {
+    "char": "",
+    "unicode": "U+E508",
+    "glyph_name": "gid58632",
+    "ocr_text": "日",
+    "image": "codepoint_58632_U+E508_gid58632.png"
+  },
+  "58633": {
+    "char": "",
+    "unicode": "U+E509",
+    "glyph_name": "gid58633",
+    "ocr_text": "信",
+    "image": "codepoint_58633_U+E509_gid58633.png"
+  },
+  "58634": {
+    "char": "",
+    "unicode": "U+E50A",
+    "glyph_name": "gid58634",
+    "ocr_text": "",
+    "image": "codepoint_58634_U+E50A_gid58634.png"
+  },
+  "58635": {
+    "char": "",
+    "unicode": "U+E50B",
+    "glyph_name": "gid58635",
+    "ocr_text": "女",
+    "image": "codepoint_58635_U+E50B_gid58635.png"
+  },
+  "58636": {
+    "char": "",
+    "unicode": "U+E50C",
+    "glyph_name": "gid58636",
+    "ocr_text": "象",
+    "image": "codepoint_58636_U+E50C_gid58636.png"
+  },
+  "58637": {
+    "char": "",
+    "unicode": "U+E50D",
+    "glyph_name": "gid58637",
+    "ocr_text": "满",
+    "image": "codepoint_58637_U+E50D_gid58637.png"
+  },
+  "58638": {
+    "char": "",
+    "unicode": "U+E50E",
+    "glyph_name": "gid58638",
+    "ocr_text": "并",
+    "image": "codepoint_58638_U+E50E_gid58638.png"
+  },
+  "58639": {
+    "char": "",
+    "unicode": "U+E50F",
+    "glyph_name": "gid58639",
+    "ocr_text": "部",
+    "image": "codepoint_58639_U+E50F_gid58639.png"
+  },
+  "58640": {
+    "char": "",
+    "unicode": "U+E510",
+    "glyph_name": "gid58640",
+    "ocr_text": "什",
+    "image": "codepoint_58640_U+E510_gid58640.png"
+  },
+  "58641": {
+    "char": "",
+    "unicode": "U+E511",
+    "glyph_name": "gid58641",
+    "ocr_text": "不",
+    "image": "codepoint_58641_U+E511_gid58641.png"
+  },
+  "58642": {
+    "char": "",
+    "unicode": "U+E512",
+    "glyph_name": "gid58642",
+    "ocr_text": "从",
+    "image": "codepoint_58642_U+E512_gid58642.png"
+  },
+  "58643": {
+    "char": "",
+    "unicode": "U+E513",
+    "glyph_name": "gid58643",
+    "ocr_text": "或",
+    "image": "codepoint_58643_U+E513_gid58643.png"
+  },
+  "58644": {
+    "char": "",
+    "unicode": "U+E514",
+    "glyph_name": "gid58644",
+    "ocr_text": "机",
+    "image": "codepoint_58644_U+E514_gid58644.png"
+  },
+  "58645": {
+    "char": "",
+    "unicode": "U+E515",
+    "glyph_name": "gid58645",
+    "ocr_text": "",
+    "image": "codepoint_58645_U+E515_gid58645.png"
+  },
+  "58647": {
+    "char": "",
+    "unicode": "U+E517",
+    "glyph_name": "gid58647",
+    "ocr_text": "了",
+    "image": "codepoint_58647_U+E517_gid58647.png"
+  },
+  "58648": {
+    "char": "",
+    "unicode": "U+E518",
+    "glyph_name": "gid58648",
+    "ocr_text": "",
+    "image": "codepoint_58648_U+E518_gid58648.png"
+  },
+  "58649": {
+    "char": "",
+    "unicode": "U+E519",
+    "glyph_name": "gid58649",
+    "ocr_text": "一",
+    "image": "codepoint_58649_U+E519_gid58649.png"
+  },
+  "58650": {
+    "char": "",
+    "unicode": "U+E51A",
+    "glyph_name": "gid58650",
+    "ocr_text": "E",
+    "image": "codepoint_58650_U+E51A_gid58650.png"
+  },
+  "58651": {
+    "char": "",
+    "unicode": "U+E51B",
+    "glyph_name": "gid58651",
+    "ocr_text": "些",
+    "image": "codepoint_58651_U+E51B_gid58651.png"
+  },
+  "58652": {
+    "char": "",
+    "unicode": "U+E51C",
+    "glyph_name": "gid58652",
+    "ocr_text": "b",
+    "image": "codepoint_58652_U+E51C_gid58652.png"
+  },
+  "58653": {
+    "char": "",
+    "unicode": "U+E51D",
+    "glyph_name": "gid58653",
+    "ocr_text": "N",
+    "image": "codepoint_58653_U+E51D_gid58653.png"
+  },
+  "58654": {
+    "char": "",
+    "unicode": "U+E51E",
+    "glyph_name": "gid58654",
+    "ocr_text": "夫",
+    "image": "codepoint_58654_U+E51E_gid58654.png"
+  },
+  "58655": {
+    "char": "",
+    "unicode": "U+E51F",
+    "glyph_name": "gid58655",
+    "ocr_text": "会",
+    "image": "codepoint_58655_U+E51F_gid58655.png"
+  },
+  "58656": {
+    "char": "",
+    "unicode": "U+E520",
+    "glyph_name": "gid58656",
+    "ocr_text": "才",
+    "image": "codepoint_58656_U+E520_gid58656.png"
+  },
+  "58657": {
+    "char": "",
+    "unicode": "U+E521",
+    "glyph_name": "gid58657",
+    "ocr_text": "j",
+    "image": "codepoint_58657_U+E521_gid58657.png"
+  },
+  "58658": {
+    "char": "",
+    "unicode": "U+E522",
+    "glyph_name": "gid58658",
+    "ocr_text": "眼",
+    "image": "codepoint_58658_U+E522_gid58658.png"
+  },
+  "58659": {
+    "char": "",
+    "unicode": "U+E523",
+    "glyph_name": "gid58659",
+    "ocr_text": "两",
+    "image": "codepoint_58659_U+E523_gid58659.png"
+  },
+  "58660": {
+    "char": "",
+    "unicode": "U+E524",
+    "glyph_name": "gid58660",
+    "ocr_text": "美",
+    "image": "codepoint_58660_U+E524_gid58660.png"
+  },
+  "58661": {
+    "char": "",
+    "unicode": "U+E525",
+    "glyph_name": "gid58661",
+    "ocr_text": "被",
+    "image": "codepoint_58661_U+E525_gid58661.png"
+  },
+  "58662": {
+    "char": "",
+    "unicode": "U+E526",
+    "glyph_name": "gid58662",
+    "ocr_text": "",
+    "image": "codepoint_58662_U+E526_gid58662.png"
+  },
+  "58663": {
+    "char": "",
+    "unicode": "U+E527",
+    "glyph_name": "gid58663",
+    "ocr_text": "公",
+    "image": "codepoint_58663_U+E527_gid58663.png"
+  },
+  "58664": {
+    "char": "",
+    "unicode": "U+E528",
+    "glyph_name": "gid58664",
+    "ocr_text": "来",
+    "image": "codepoint_58664_U+E528_gid58664.png"
+  },
+  "58665": {
+    "char": "",
+    "unicode": "U+E529",
+    "glyph_name": "gid58665",
+    "ocr_text": "v",
+    "image": "codepoint_58665_U+E529_gid58665.png"
+  },
+  "58666": {
+    "char": "",
+    "unicode": "U+E52A",
+    "glyph_name": "gid58666",
+    "ocr_text": "Z",
+    "image": "codepoint_58666_U+E52A_gid58666.png"
+  },
+  "58667": {
+    "char": "",
+    "unicode": "U+E52B",
+    "glyph_name": "gid58667",
+    "ocr_text": "长",
+    "image": "codepoint_58667_U+E52B_gid58667.png"
+  },
+  "58668": {
+    "char": "",
+    "unicode": "U+E52C",
+    "glyph_name": "gid58668",
+    "ocr_text": "对",
+    "image": "codepoint_58668_U+E52C_gid58668.png"
+  },
+  "58669": {
+    "char": "",
+    "unicode": "U+E52D",
+    "glyph_name": "gid58669",
+    "ocr_text": "",
+    "image": "codepoint_58669_U+E52D_gid58669.png"
+  },
+  "58670": {
+    "char": "",
+    "unicode": "U+E52E",
+    "glyph_name": "gid58670",
+    "ocr_text": "看",
+    "image": "codepoint_58670_U+E52E_gid58670.png"
+  },
+  "58671": {
+    "char": "",
+    "unicode": "U+E52F",
+    "glyph_name": "gid58671",
+    "ocr_text": "k",
+    "image": "codepoint_58671_U+E52F_gid58671.png"
+  },
+  "58672": {
+    "char": "",
+    "unicode": "U+E530",
+    "glyph_name": "gid58672",
+    "ocr_text": "许",
+    "image": "codepoint_58672_U+E530_gid58672.png"
+  },
+  "58673": {
+    "char": "",
+    "unicode": "U+E531",
+    "glyph_name": "gid58673",
+    "ocr_text": "为",
+    "image": "codepoint_58673_U+E531_gid58673.png"
+  },
+  "58674": {
+    "char": "",
+    "unicode": "U+E532",
+    "glyph_name": "gid58674",
+    "ocr_text": "相",
+    "image": "codepoint_58674_U+E532_gid58674.png"
+  },
+  "58675": {
+    "char": "",
+    "unicode": "U+E533",
+    "glyph_name": "gid58675",
+    "ocr_text": "色",
+    "image": "codepoint_58675_U+E533_gid58675.png"
+  },
+  "58676": {
+    "char": "",
+    "unicode": "U+E534",
+    "glyph_name": "gid58676",
+    "ocr_text": "后",
+    "image": "codepoint_58676_U+E534_gid58676.png"
+  },
+  "58677": {
+    "char": "",
+    "unicode": "U+E535",
+    "glyph_name": "gid58677",
+    "ocr_text": "住",
+    "image": "codepoint_58677_U+E535_gid58677.png"
+  },
+  "58678": {
+    "char": "",
+    "unicode": "U+E536",
+    "glyph_name": "gid58678",
+    "ocr_text": "打",
+    "image": "codepoint_58678_U+E536_gid58678.png"
+  },
+  "58679": {
+    "char": "",
+    "unicode": "U+E537",
+    "glyph_name": "gid58679",
+    "ocr_text": "结",
+    "image": "codepoint_58679_U+E537_gid58679.png"
+  },
+  "58680": {
+    "char": "",
+    "unicode": "U+E538",
+    "glyph_name": "gid58680",
+    "ocr_text": "格",
+    "image": "codepoint_58680_U+E538_gid58680.png"
+  },
+  "58681": {
+    "char": "",
+    "unicode": "U+E539",
+    "glyph_name": "gid58681",
+    "ocr_text": "过",
+    "image": "codepoint_58681_U+E539_gid58681.png"
+  },
+  "58682": {
+    "char": "",
+    "unicode": "U+E53A",
+    "glyph_name": "gid58682",
+    "ocr_text": "世",
+    "image": "codepoint_58682_U+E53A_gid58682.png"
+  },
+  "58683": {
+    "char": "",
+    "unicode": "U+E53B",
+    "glyph_name": "gid58683",
+    "ocr_text": "气",
+    "image": "codepoint_58683_U+E53B_gid58683.png"
+  },
+  "58684": {
+    "char": "",
+    "unicode": "U+E53C",
+    "glyph_name": "gid58684",
+    "ocr_text": "7",
+    "image": "codepoint_58684_U+E53C_gid58684.png"
+  },
+  "58685": {
+    "char": "",
+    "unicode": "U+E53D",
+    "glyph_name": "gid58685",
+    "ocr_text": "子",
+    "image": "codepoint_58685_U+E53D_gid58685.png"
+  },
+  "58686": {
+    "char": "",
+    "unicode": "U+E53E",
+    "glyph_name": "gid58686",
+    "ocr_text": "条",
+    "image": "codepoint_58686_U+E53E_gid58686.png"
+  },
+  "58687": {
+    "char": "",
+    "unicode": "U+E53F",
+    "glyph_name": "gid58687",
+    "ocr_text": "在",
+    "image": "codepoint_58687_U+E53F_gid58687.png"
+  },
+  "58688": {
+    "char": "",
+    "unicode": "U+E540",
+    "glyph_name": "gid58688",
+    "ocr_text": "书",
+    "image": "codepoint_58688_U+E540_gid58688.png"
+  },
+  "58689": {
+    "char": "",
+    "unicode": "U+E541",
+    "glyph_name": "gid58689",
+    "ocr_text": "之",
+    "image": "codepoint_58689_U+E541_gid58689.png"
+  },
+  "58690": {
+    "char": "",
+    "unicode": "U+E542",
+    "glyph_name": "gid58690",
+    "ocr_text": "定",
+    "image": "codepoint_58690_U+E542_gid58690.png"
+  },
+  "58691": {
+    "char": "",
+    "unicode": "U+E543",
+    "glyph_name": "gid58691",
+    "ocr_text": "V",
+    "image": "codepoint_58691_U+E543_gid58691.png"
+  },
+  "58692": {
+    "char": "",
+    "unicode": "U+E544",
+    "glyph_name": "gid58692",
+    "ocr_text": "拉",
+    "image": "codepoint_58692_U+E544_gid58692.png"
+  },
+  "58693": {
+    "char": "",
+    "unicode": "U+E545",
+    "glyph_name": "gid58693",
+    "ocr_text": "成",
+    "image": "codepoint_58693_U+E545_gid58693.png"
+  },
+  "58694": {
+    "char": "",
+    "unicode": "U+E546",
+    "glyph_name": "gid58694",
+    "ocr_text": "进",
+    "image": "codepoint_58694_U+E546_gid58694.png"
+  },
+  "58695": {
+    "char": "",
+    "unicode": "U+E547",
+    "glyph_name": "gid58695",
+    "ocr_text": "带",
+    "image": "codepoint_58695_U+E547_gid58695.png"
+  },
+  "58696": {
+    "char": "",
+    "unicode": "U+E548",
+    "glyph_name": "gid58696",
+    "ocr_text": "着",
+    "image": "codepoint_58696_U+E548_gid58696.png"
+  },
+  "58697": {
+    "char": "",
+    "unicode": "U+E549",
+    "glyph_name": "gid58697",
+    "ocr_text": "东",
+    "image": "codepoint_58697_U+E549_gid58697.png"
+  },
+  "58698": {
+    "char": "",
+    "unicode": "U+E54A",
+    "glyph_name": "gid58698",
+    "ocr_text": "上",
+    "image": "codepoint_58698_U+E54A_gid58698.png"
+  },
+  "58699": {
+    "char": "",
+    "unicode": "U+E54B",
+    "glyph_name": "gid58699",
+    "ocr_text": "想",
+    "image": "codepoint_58699_U+E54B_gid58699.png"
+  },
+  "58700": {
+    "char": "",
+    "unicode": "U+E54C",
+    "glyph_name": "gid58700",
+    "ocr_text": "天",
+    "image": "codepoint_58700_U+E54C_gid58700.png"
+  },
+  "58701": {
+    "char": "",
+    "unicode": "U+E54D",
+    "glyph_name": "gid58701",
+    "ocr_text": "他",
+    "image": "codepoint_58701_U+E54D_gid58701.png"
+  },
+  "58702": {
+    "char": "",
+    "unicode": "U+E54E",
+    "glyph_name": "gid58702",
+    "ocr_text": "妈",
+    "image": "codepoint_58702_U+E54E_gid58702.png"
+  },
+  "58703": {
+    "char": "",
+    "unicode": "U+E54F",
+    "glyph_name": "gid58703",
+    "ocr_text": "1",
+    "image": "codepoint_58703_U+E54F_gid58703.png"
+  },
+  "58704": {
+    "char": "",
+    "unicode": "U+E550",
+    "glyph_name": "gid58704",
+    "ocr_text": "文",
+    "image": "codepoint_58704_U+E550_gid58704.png"
+  },
+  "58705": {
+    "char": "",
+    "unicode": "U+E551",
+    "glyph_name": "gid58705",
+    "ocr_text": "而",
+    "image": "codepoint_58705_U+E551_gid58705.png"
+  },
+  "58706": {
+    "char": "",
+    "unicode": "U+E552",
+    "glyph_name": "gid58706",
+    "ocr_text": "路",
+    "image": "codepoint_58706_U+E552_gid58706.png"
+  },
+  "58707": {
+    "char": "",
+    "unicode": "U+E553",
+    "glyph_name": "gid58707",
+    "ocr_text": "那",
+    "image": "codepoint_58707_U+E553_gid58707.png"
+  },
+  "58708": {
+    "char": "",
+    "unicode": "U+E554",
+    "glyph_name": "gid58708",
+    "ocr_text": "别",
+    "image": "codepoint_58708_U+E554_gid58708.png"
+  },
+  "58709": {
+    "char": "",
+    "unicode": "U+E555",
+    "glyph_name": "gid58709",
+    "ocr_text": "德",
+    "image": "codepoint_58709_U+E555_gid58709.png"
+  },
+  "58710": {
+    "char": "",
+    "unicode": "U+E556",
+    "glyph_name": "gid58710",
+    "ocr_text": "6",
+    "image": "codepoint_58710_U+E556_gid58710.png"
+  },
+  "58711": {
+    "char": "",
+    "unicode": "U+E557",
+    "glyph_name": "gid58711",
+    "ocr_text": "M",
+    "image": "codepoint_58711_U+E557_gid58711.png"
+  },
+  "58712": {
+    "char": "",
+    "unicode": "U+E558",
+    "glyph_name": "gid58712",
+    "ocr_text": "t",
+    "image": "codepoint_58712_U+E558_gid58712.png"
+  },
+  "58713": {
+    "char": "",
+    "unicode": "U+E559",
+    "glyph_name": "gid58713",
+    "ocr_text": "行",
+    "image": "codepoint_58713_U+E559_gid58713.png"
+  },
+  "58714": {
+    "char": "",
+    "unicode": "U+E55A",
+    "glyph_name": "gid58714",
+    "ocr_text": "候",
+    "image": "codepoint_58714_U+E55A_gid58714.png"
+  },
+  "58715": {
+    "char": "",
+    "unicode": "U+E55B",
+    "glyph_name": "gid58715",
+    "ocr_text": "",
+    "image": "codepoint_58715_U+E55B_gid58715.png"
+  }
+}
