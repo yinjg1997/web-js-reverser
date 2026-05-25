@@ -36,7 +36,6 @@ def get_target_cmap(font):
     cmap = font.getBestCmap()
     return {
         codepoint: glyph_name
-        # 码点, 字形
         for codepoint, glyph_name in cmap.items()
         if TARGET_CODEPOINT_START <= codepoint <= TARGET_CODEPOINT_END
     }
@@ -105,14 +104,18 @@ def build_decode_map(font, glyph_dir):
 
         commands = get_glyph_commands(glyph)
         char = chr(codepoint)
-        image_path = glyph_dir / f"U+{codepoint:04X}_{glyph_name}.png"
+        # {codepoint:04X} 按十六进制大写输出, 最少宽度 4 位, 不够 4 位时左侧补 0
+        image_name = f"codepoint_{codepoint}_U+{codepoint:04X}_{glyph_name}.png"
+        image_path = glyph_dir / image_name
         render_glyph_image(commands, bounds, image_path)
 
         text = ocr_image(ocr, image_path)
-        if len(text) == 1:
-            decode_map[char] = text
-        else:
-            decode_map[char] = ""
+        decode_map[str(codepoint)] = {
+            "char": char,
+            "glyph_name": glyph_name,
+            "ocr_text": text if len(text) == 1 else "",
+            "image": image_name,
+        }
 
     return decode_map
 
@@ -125,6 +128,7 @@ def save_cmap(decode_map, output_path):
 def main():
     """下载字体、OCR 识别私有区字符，并持久化保存解码映射。"""
     base_dir = Path(__file__).parent
+    # print('base_dir :: ', base_dir)
     font_path = base_dir / FONT_FILE_NAME
     cmap_path = base_dir / CMAP_FILE_NAME
     glyph_dir = base_dir / GLYPH_DIR_NAME
@@ -137,10 +141,8 @@ def main():
 
     print(font_path)
     print(cmap_path)
-    print(f"decoded={sum(1 for value in decode_map.values() if value)} total={len(decode_map)}")
+    print(f"decoded={sum(1 for value in decode_map.values() if value['ocr_text'])} total={len(decode_map)}")
 
 
 if __name__ == "__main__":
-    # main()
-    print(ord(""))
-    print(ord(""))
+    main()

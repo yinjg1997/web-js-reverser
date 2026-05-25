@@ -1,3 +1,4 @@
+/* 入口：脚本初始化与执行开始 */
 (function q(iq, A, y, O) {
     var ix = ReferenceError
       , iY = TypeError
@@ -2652,6 +2653,7 @@
     iM(w, "k", W);
     iM(w, "Ww", W);
     iM(w, "WX", W);
+    /* 加密相关：字符串解密、属性名还原和运行时参数处理 */
     var iz = [function(i, q, a) {
         var U = q;
         var E = a;
@@ -2766,7 +2768,8 @@
         Z.WQ[Z.WQ.length - 2] = r[Q];
         Z.WQ.length -= 1
     }
-    , function(i, q, a) {
+    , /* 请求相关：构造参数、还原字段并拼接运行时值 */
+    function(i, q, a) {
         var v = x[q];
         var M = a;
         var K = i.WQ[i.WQ.length - 1];
@@ -4106,7 +4109,8 @@
         i.WQ[C] = M;
         i.WQ[C + 1] = i.k.x(v)
     }
-    , function(i, q, a) {
+    , /* 请求相关：构造请求时的字段还原与对象赋值 */
+    function(i, q, a) {
         var U = q;
         var E = a;
         b0: {
@@ -4850,6 +4854,7 @@
                 i.S.Wv(Z)
             }
         };
+        /* WASM：创建内存并加载核心计算模块 */
         var b = new WebAssembly.Memory({
             initial: 3,
             maximum: 3
