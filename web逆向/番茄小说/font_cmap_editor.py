@@ -352,7 +352,6 @@ HTML = """<!doctype html>
         unicode: entry.unicode,
         glyph_name: entry.glyph_name,
         ocr_text: entry.ocr_text,
-        image: '',
       }]));
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -468,7 +467,6 @@ def save_entries(entries):
             'unicode': entry['unicode'],
             'glyph_name': entry['glyph_name'],
             'ocr_text': entry['ocr_text'],
-            'image': '',
         }
         for entry in entries
     }
