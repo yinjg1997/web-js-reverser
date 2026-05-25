@@ -15,8 +15,6 @@ CMAP_FILE_NAME = "cmap.json"
 GLYPH_DIR_NAME = "glyphs"
 PADDING = 40
 LINE_WIDTH = 3
-TARGET_CODEPOINT_START = 0xE000
-TARGET_CODEPOINT_END = 0xF8FF
 
 
 def load_font_from_url(url):
@@ -37,7 +35,7 @@ def get_target_cmap(font):
     return {
         codepoint: glyph_name
         for codepoint, glyph_name in cmap.items()
-        if TARGET_CODEPOINT_START <= codepoint <= TARGET_CODEPOINT_END
+        if 0xE000 <= codepoint <= 0xF8FF
     }
 
 
@@ -140,8 +138,6 @@ def main():
     decode_map = build_decode_map(font, glyph_dir)
     save_cmap(decode_map, cmap_path)
 
-    print(font_path)
-    print(cmap_path)
     print(f"decoded={sum(1 for value in decode_map.values() if value['ocr_text'])} total={len(decode_map)}")
 
 
