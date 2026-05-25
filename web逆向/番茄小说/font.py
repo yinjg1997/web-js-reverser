@@ -112,6 +112,7 @@ def build_decode_map(font, glyph_dir):
         text = ocr_image(ocr, image_path)
         decode_map[str(codepoint)] = {
             "char": char,
+            "unicode": f"U+{codepoint:04X}",
             "glyph_name": glyph_name,
             "ocr_text": text if len(text) == 1 else "",
             "image": image_name,
