@@ -18,6 +18,7 @@
     ];
     const TARGET_API = 'mtop.taobao.idlemtopsearch.pc.search/1.0/';
     const blockedItemIds = new Set();
+    const itemSellerMap = new Map();
 
     function getBlacklist() {
         const stored = GM_getValue('seller_blacklist', null);
@@ -26,21 +27,90 @@
         return DEFAULT_BLACKLIST;
     }
 
-    function hideBlockedItems(root = document) {
-        if (!blockedItemIds.size) return;
+    function saveBlacklist(list) {
+        GM_setValue('seller_blacklist', list);
+    }
+
+    function getItemIdFromLink(link) {
+        const href = link.getAttribute('href') || '';
+        const match = href.match(/[?&]id=(\d+)/);
+        return match?.[1] || '';
+    }
+
+    function createSellerUi(link, itemId, sellerId) {
+        if (link.querySelector('[data-seller-filter-ui="1"]')) return;
+
+        const panel = document.createElement('div');
+        panel.dataset.sellerFilterUi = '1';
+        panel.style.display = 'flex';
+        panel.style.alignItems = 'center';
+        panel.style.gap = '6px';
+        panel.style.flexWrap = 'wrap';
+        panel.style.marginTop = '6px';
+        panel.style.fontSize = '12px';
+        panel.style.lineHeight = '1.2';
+
+        const sellerTag = document.createElement('span');
+        sellerTag.textContent = `seller_id: ${sellerId}`;
+        sellerTag.style.padding = '2px 6px';
+        sellerTag.style.borderRadius = '4px';
+        sellerTag.style.background = 'rgba(255, 122, 0, 0.12)';
+        sellerTag.style.color = '#ff6a00';
+        sellerTag.style.maxWidth = '100%';
+        sellerTag.style.wordBreak = 'break-all';
+
+        const blockButton = document.createElement('button');
+        blockButton.type = 'button';
+        blockButton.textContent = '屏蔽';
+        blockButton.style.border = 'none';
+        blockButton.style.borderRadius = '4px';
+        blockButton.style.padding = '2px 8px';
+        blockButton.style.background = '#ff4d4f';
+        blockButton.style.color = '#fff';
+        blockButton.style.cursor = 'pointer';
+        blockButton.style.fontSize = '12px';
+
+        blockButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const blacklist = getBlacklist();
+            if (!blacklist.includes(sellerId)) {
+                saveBlacklist([...blacklist, sellerId]);
+            }
+            blockedItemIds.add(itemId);
+            link.dataset.sellerFilterHidden = '1';
+            link.style.display = 'none';
+            console.log(`[闲鱼过滤器] 已屏蔽 seller ${sellerId}，item ${itemId}`);
+        });
+
+        panel.appendChild(sellerTag);
+        panel.appendChild(blockButton);
+
+        const content = link.querySelector('div[class*="feeds-content"]');
+        (content || link).appendChild(panel);
+    }
+
+    function processItemCards(root = document) {
         const links = root.querySelectorAll('a[href*="/item?id="]');
         let hidden = 0;
 
         for (const link of links) {
-            const href = link.getAttribute('href') || '';
-            const match = href.match(/[?&]id=(\d+)/);
-            const itemId = match?.[1];
-            if (!itemId || !blockedItemIds.has(itemId)) continue;
-            if (link.dataset.sellerFilterHidden === '1') continue;
+            const itemId = getItemIdFromLink(link);
+            if (!itemId) continue;
 
-            link.dataset.sellerFilterHidden = '1';
-            link.style.display = 'none';
-            hidden++;
+            if (blockedItemIds.has(itemId)) {
+                if (link.dataset.sellerFilterHidden === '1') continue;
+                link.dataset.sellerFilterHidden = '1';
+                link.style.display = 'none';
+                hidden++;
+                continue;
+            }
+
+            const sellerId = itemSellerMap.get(itemId);
+            if (sellerId) {
+                createSellerUi(link, itemId, sellerId);
+            }
         }
 
         if (hidden) console.log(`[闲鱼过滤器] 已隐藏 ${hidden} 个商品卡片`);
@@ -48,7 +118,7 @@
 
     function collectBlockedItems(jsonText) {
         const blacklist = getBlacklist();
-        if (!blacklist.length || typeof jsonText !== 'string') return;
+        if (typeof jsonText !== 'string') return;
 
         try {
             const resp = JSON.parse(jsonText);
@@ -61,6 +131,9 @@
                 const sellerId = item?.main?.clickParam?.args?.seller_id;
                 const itemId = String(item?.itemId ?? item?.main?.clickParam?.args?.id ?? '');
                 if (!sellerId || !itemId) continue;
+
+                itemSellerMap.set(itemId, sellerId);
+
                 if (!blacklist.includes(sellerId)) continue;
                 if (blockedItemIds.has(itemId)) continue;
 
@@ -69,9 +142,10 @@
                 console.log(`[闲鱼过滤器] 标记 item ${itemId}，seller ${sellerId}`);
             }
 
+            processItemCards();
+
             if (added) {
                 console.log(`[闲鱼过滤器] 新增 ${added} 个待隐藏商品，累计 ${blockedItemIds.size} 个`);
-                hideBlockedItems();
             }
         } catch (_) {
             // 忽略解析失败
@@ -127,10 +201,10 @@
                 for (const node of mutation.addedNodes) {
                     if (!(node instanceof Element)) continue;
                     if (node.matches?.('a[href*="/item?id="]')) {
-                        hideBlockedItems(node.parentElement || node);
+                        processItemCards(node.parentElement || node);
                         continue;
                     }
-                    hideBlockedItems(node);
+                    processItemCards(node);
                 }
             }
         });
@@ -138,9 +212,9 @@
         observer.observe(document.documentElement, { childList: true, subtree: true });
 
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => hideBlockedItems(), { once: true });
+            document.addEventListener('DOMContentLoaded', () => processItemCards(), { once: true });
         } else {
-            hideBlockedItems();
+            processItemCards();
         }
     }
 
@@ -152,7 +226,7 @@
         );
         if (input === null) return;
         const newList = input.split(/[,，\n]+/).map(s => s.trim()).filter(Boolean);
-        GM_setValue('seller_blacklist', newList);
+        saveBlacklist(newList);
         alert('黑名单已更新（' + newList.length + ' 条），刷新生效。');
     });
 
