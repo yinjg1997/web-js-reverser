@@ -40,35 +40,30 @@
     function createSellerUi(link, itemId, sellerId) {
         if (link.querySelector('[data-seller-filter-ui="1"]')) return;
 
+        link.style.position = 'relative';
+
         const panel = document.createElement('div');
         panel.dataset.sellerFilterUi = '1';
+        panel.style.position = 'absolute';
+        panel.style.top = '8px';
+        panel.style.right = '8px';
+        panel.style.zIndex = '20';
         panel.style.display = 'flex';
         panel.style.alignItems = 'center';
         panel.style.gap = '6px';
-        panel.style.flexWrap = 'wrap';
-        panel.style.marginTop = '6px';
-        panel.style.fontSize = '12px';
-        panel.style.lineHeight = '1.2';
-
-        const sellerTag = document.createElement('span');
-        sellerTag.textContent = `seller_id: ${sellerId}`;
-        sellerTag.style.padding = '2px 6px';
-        sellerTag.style.borderRadius = '4px';
-        sellerTag.style.background = 'rgba(255, 122, 0, 0.12)';
-        sellerTag.style.color = '#ff6a00';
-        sellerTag.style.maxWidth = '100%';
-        sellerTag.style.wordBreak = 'break-all';
 
         const blockButton = document.createElement('button');
         blockButton.type = 'button';
-        blockButton.textContent = '屏蔽';
+        blockButton.textContent = '不看该卖家';
+        blockButton.title = `seller_id: ${sellerId}`;
         blockButton.style.border = 'none';
         blockButton.style.borderRadius = '4px';
-        blockButton.style.padding = '2px 8px';
+        blockButton.style.padding = '4px 8px';
         blockButton.style.background = '#ff4d4f';
         blockButton.style.color = '#fff';
         blockButton.style.cursor = 'pointer';
         blockButton.style.fontSize = '12px';
+        blockButton.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.25)';
 
         blockButton.addEventListener('click', (event) => {
             event.preventDefault();
@@ -84,11 +79,8 @@
             console.log(`[闲鱼过滤器] 已屏蔽 seller ${sellerId}，item ${itemId}`);
         });
 
-        panel.appendChild(sellerTag);
         panel.appendChild(blockButton);
-
-        const content = link.querySelector('div[class*="feeds-content"]');
-        (content || link).appendChild(panel);
+        link.appendChild(panel);
     }
 
     function processItemCards(root = document) {
