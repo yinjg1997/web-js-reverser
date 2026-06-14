@@ -26,5 +26,12 @@ window = globalThis;
         enumerable: false,
         configurable: true,
     })
+
+    Object.defineProperty(Function, "name", {
+        value: "Function",
+        writable: false,
+        enumerable: false,
+        configurable: true,
+    })
 })()
 
