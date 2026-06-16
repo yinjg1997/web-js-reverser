@@ -1,11 +1,13 @@
+const fs = require('fs');
+const nodePath = require('path');
+const vm = require('vm');
 const {MD5, Hex} = require("crypto-js");
-require('./x-s/env.js')
-require('./x-s/mnsv2.js')
 
 class XhsSign {
     constructor() {
         this.x0 = '4.3.5';
         this.x1 = "xhs-pc-web";
+        this._initSandbox();
         this.PlatformCode = {
             0: "Windows",
             1: "iOS",
@@ -21,6 +23,22 @@ class XhsSign {
             other: 5,
         };
         this.ALPHABET = "ZmserbBoHQtNP+wOcza/LpngG8yJq42KWYj0DSfdikx3VT16IlUAFM97hECvuRX5";
+    }
+
+    _initSandbox() {
+        this.sandbox = {
+            console,
+            performance: require('perf_hooks').performance,
+            TextEncoder: require('util').TextEncoder,
+            Event: function Event() {
+            },
+        };
+        vm.createContext(this.sandbox);
+        let code = "";
+        for (const f of ['./x-s/env.js', './x-s/mnsv2.js']) {
+            code += "\n" + fs.readFileSync(nodePath.join(__dirname, f), 'utf8');
+        }
+        vm.runInContext(code, this.sandbox);
     }
 
     tripletToBase64(e) {
@@ -194,13 +212,13 @@ class XhsSign {
      * @returns {string}
      */
     get_xs(e, a, a1) {
-        document.cookie = `a1=${a1};`;
+        this.sandbox.document.cookie = `a1=${a1};`;
 
         var u = e;
         "[object Object]" === Object.prototype.toString.call(a) || "[object Array]" === Object.prototype.toString.call(a) || (void 0 === a ? "undefined" : this._type_of(a)) === "object" && null !== a ? u += JSON.stringify(a) : "string" == typeof a && (u += a);
         var m = MD5([u].join("")).toString(Hex);
         var w = MD5(e).toString(Hex);
-        var C = window.mnsv2(u, m, w);
+        var C = this.sandbox.window.mnsv2(u, m, w);
 
         var P = {
             x0: '4.3.5',
