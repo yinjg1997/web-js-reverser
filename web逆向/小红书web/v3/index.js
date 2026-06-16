@@ -277,7 +277,18 @@ function websession_xs_common() {
     console.log("xs_common: ", xs_common);
 }
 
-// test_a1()
+function test_mnsv2() {
+    const u = '/api/sec/v1/scripting{"callFrom":"web","callback":"seccallback"}'
+    const m = '3d08093c65de13679b96a87493e1ed41'
+    const w = "30075585641997ca77efa138e473890d"
+    const res = window.mnsv2(u, m, w);
+    console.log("================")
+    console.log(res)
+}
+
+// test_mnsv2()
+
+test_a1()
 // test_xs()
 // get_fp()
 // websession_xs_common()

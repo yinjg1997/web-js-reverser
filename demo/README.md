@@ -1,3 +1,10 @@
+# Locate the encryption code
+- search
+- trace stack
+# Locate decryption code
+- hook
+- xhr callback locate
+
 # 若请求和返回值都被加密
 应该先逆向解密返回值, 再逆向加密请求参数; 一般这样容易验证
 
