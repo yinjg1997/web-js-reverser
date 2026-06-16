@@ -2,10 +2,11 @@ delete __filename
 delete __dirname
 !(() => {
     const origin_log = console.log;
-    logToConsole = function (){
+    logToConsole = function () {
         return origin_log(...arguments)
     }
 })();
+
 //环境代理
 function watch(obj, name) {
     // 用于存储已记录的操作，实现去重
@@ -117,18 +118,18 @@ function watch(obj, name) {
 
             return keys;
         },
-         // ✅ 新增：拦截 getOwnPropertyDescriptor（检测 hasOwnProperty 和 Object.keys 等）
-    getOwnPropertyDescriptor: (target, property) => {
-    const descriptor = Reflect.getOwnPropertyDescriptor(target, property);
+        // ✅ 新增：拦截 getOwnPropertyDescriptor（检测 hasOwnProperty 和 Object.keys 等）
+        getOwnPropertyDescriptor: (target, property) => {
+            const descriptor = Reflect.getOwnPropertyDescriptor(target, property);
 
-    if (descriptor) {
-        console.log(`[原型链检测] ${name} 自身有属性: ${String(property)}`);
-    } else {
-        console.log(`[原型链检测] ${name} 自身没有属性: ${String(property)}，在原型链上`);
-    }
+            if (descriptor) {
+                console.log(`[原型链检测] ${name} 自身有属性: ${String(property)}`);
+            } else {
+                console.log(`[原型链检测] ${name} 自身没有属性: ${String(property)}，在原型链上`);
+            }
 
-    return descriptor;
-}
+            return descriptor;
+        }
     });
 }
 
@@ -160,10 +161,10 @@ const safeFunction = (function () {
 
     return function (func) {
         // ✅ 跳过原生构造函数
-    var nativeConstructors = ['Error', 'RegExp', 'Date', 'Math', 'Function', 'Object', 'Array', 'String', 'Number', 'Boolean', 'Symbol', 'Promise', 'Map', 'Set', 'WeakMap', 'WeakSet'];
-    if (nativeConstructors.indexOf(func.name) !== -1) {
-        return func;
-    }
+        var nativeConstructors = ['Error', 'RegExp', 'Date', 'Math', 'Function', 'Object', 'Array', 'String', 'Number', 'Boolean', 'Symbol', 'Promise', 'Map', 'Set', 'WeakMap', 'WeakSet'];
+        if (nativeConstructors.indexOf(func.name) !== -1) {
+            return func;
+        }
         set_native(func, myFunction_toString_symbol, "function" + (func.name ? " " + func.name : "") + "() { [native code] }");
     }
 
@@ -175,8 +176,8 @@ function createConstructor(constructorName, enableStrictMode, propertiesList, pr
     const constructorFunction = function (element, propertySetter, validationToken) {
         // ✅ 1. 先检测是否用 new 调用
         if (!(this instanceof constructorFunction)) {
-    throw new TypeError("Failed to construct '" + constructorName + "': Please use the 'new' operator, this DOM object constructor cannot be called as a function.");
-}
+            throw new TypeError("Failed to construct '" + constructorName + "': Please use the 'new' operator, this DOM object constructor cannot be called as a function.");
+        }
         if (enableStrictMode && !(validationToken && validationToken === "fatdog")) {
             throw new TypeError("Illegal constructor");
         }
@@ -280,39 +281,40 @@ function createConstructor(constructorName, enableStrictMode, propertiesList, pr
 window = globalThis;
 delete globalThis.navigator;
 createConstructor('Permissions', true, [], {
-    query:function(options){
+    query: function (options) {
         // console.log('Permissions.query被调用————', options);
-    return new Promise(function(resolve) {
-        var status = new PermissionStatus({state: 'granted'}, null, 'fatdog');
-        resolve(status);
-    });
+        return new Promise(function (resolve) {
+            var status = new PermissionStatus({state: 'granted'}, null, 'fatdog');
+            resolve(status);
+        });
     }
 });
 createConstructor('PermissionStatus', true, ['state', 'onchange'], {
-    addEventListener: function(type, listener) {
+    addEventListener: function (type, listener) {
         console.log('PermissionStatus.addEventListener:', type);
     },
-    removeEventListener: function(type, listener) {
+    removeEventListener: function (type, listener) {
         console.log('PermissionStatus.removeEventListener:', type);
     }
 });
 createConstructor('EventTarget', true, [], {
-    addEventListener:function(){}
+    addEventListener: function () {
+    }
 });
 createConstructor('Node', true, [], {
-    removeChild:function(child){
+    removeChild: function (child) {
         // console.log(`${this.tagName}删除了————`,child)
         // 不抛出错误，直接返回
         return child;
     },
-    appendChild: function(child) {
+    appendChild: function (child) {
         console.log('appendChild被调用————', child);
         if (!child || typeof child !== 'object' || !child.tagName) {
             throw new TypeError("Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.");
         }
         return child;
     },
-    insertBefore: function(newChild, refChild) {
+    insertBefore: function (newChild, refChild) {
         console.log('insertBefore被调用————', newChild, refChild);
         if (!newChild || typeof newChild !== 'object' || !newChild.tagName) {
             throw new TypeError("Failed to execute 'insertBefore' on 'Node': parameter 1 is not of type 'Node'.");
@@ -322,15 +324,13 @@ createConstructor('Node', true, [], {
 }, 'EventTarget');
 createConstructor('WindowProperties', true, [], {}, 'EventTarget')
 createConstructor('Window', true, [], {}, 'WindowProperties');
-createConstructor('NavigatorUAData', true, [], {
-
-});
+createConstructor('NavigatorUAData', true, [], {});
 
 createConstructor('Navigator', true, [], {
-    permissions: new Permissions({},null,'fatdog'),
+    permissions: new Permissions({}, null, 'fatdog'),
     appCodeName: "Mozilla",
     appName: "Netscape",
-    appVersion:'5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
+    appVersion: '5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
     language: "zh-CN",
     vendor: "Google Inc.",
     vendorSub: "",
@@ -339,23 +339,23 @@ createConstructor('Navigator', true, [], {
     languages: ['zh-CN', 'zh'],
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
     userAgentData: new NavigatorUAData({
-    "brands": [
-        {
-            "brand": "Chromium",
-            "version": "148"
-        },
-        {
-            "brand": "Google Chrome",
-            "version": "148"
-        },
-        {
-            "brand": "Not/A)Brand",
-            "version": "99"
-        }
-    ],
-    "mobile": false,
-    "platform": "Windows"
-},null,'fatdog')
+        "brands": [
+            {
+                "brand": "Chromium",
+                "version": "148"
+            },
+            {
+                "brand": "Google Chrome",
+                "version": "148"
+            },
+            {
+                "brand": "Not/A)Brand",
+                "version": "99"
+            }
+        ],
+        "mobile": false,
+        "platform": "Windows"
+    }, null, 'fatdog')
 });
 createConstructor('Screen', true, [], {
     width: 1920,
@@ -373,151 +373,155 @@ createConstructor('History', true, [], {});
 createConstructor('Location', true, [], {});
 
 createConstructor('Element', true, [], {
-    getAttribute:function(name){
+    getAttribute: function (name) {
         // console.log("getAttribute读取",name)
     }
-},'Node');
-createConstructor('HTMLElement', true, [], {
-
-},"Element");
-createConstructor('HTMLHtmlElement', true, [], {},"HTMLElement");
-createConstructor('HTMLBodyElement', true, [], {},"HTMLElement");
+}, 'Node');
+createConstructor('HTMLElement', true, [], {}, "Element");
+createConstructor('HTMLHtmlElement', true, [], {}, "HTMLElement");
+createConstructor('HTMLBodyElement', true, [], {}, "HTMLElement");
 createConstructor('HTMLAllCollection', true, [], {});
 createConstructor('Document', true, [], {
-    evaluate:function(xpathExpression, contextNode, namespaceResolver, resultType, result){
+    evaluate: function (xpathExpression, contextNode, namespaceResolver, resultType, result) {
         // console.log('Document.evaluate被调用————',xpathExpression)
     },
-    querySelectorAll:function(selectors){
+    querySelectorAll: function (selectors) {
         // console.log('Document.querySelectorAll被调用————',selectors)
     },
-    getElementsByTagName:function(tagname){
+    getElementsByTagName: function (tagname) {
         // console.log('getElementsByTagName获取————',tagname)
         const commonTags = [
-    "html",
-    "head",
-    "script",
-    "title",
-    "meta",
-    "link",
-    "style",
-    "iframe",
-    "body",
-    "div",
-    "svg",
-    "defs",
-    "clippath",
-    "rect",
-    "path",
-    "lineargradient",
-    "stop",
-    "symbol",
-    "g",
-    "mask",
-    "circle",
-    "header",
-    "a",
-    "img",
-    "input",
-    "use",
-    "button",
-    "span",
-    "ul",
-    "li",
-    "p",
-    "section"
-];
+            "html",
+            "head",
+            "script",
+            "title",
+            "meta",
+            "link",
+            "style",
+            "iframe",
+            "body",
+            "div",
+            "svg",
+            "defs",
+            "clippath",
+            "rect",
+            "path",
+            "lineargradient",
+            "stop",
+            "symbol",
+            "g",
+            "mask",
+            "circle",
+            "header",
+            "a",
+            "img",
+            "input",
+            "use",
+            "button",
+            "span",
+            "ul",
+            "li",
+            "p",
+            "section"
+        ];
         if (tagname === '*') {
             return {
                 length: commonTags.length,
-                [Symbol.iterator]: function*() {
+                [Symbol.iterator]: function* () {
                     for (const tagName of commonTags) {
-                        yield { tagName: tagName.toUpperCase() };
+                        yield {tagName: tagName.toUpperCase()};
                     }
                 },
-                item: function(i) {
+                item: function (i) {
                     return i >= 0 && i < commonTags.length
-                        ? { tagName: commonTags[i].toUpperCase() }
+                        ? {tagName: commonTags[i].toUpperCase()}
                         : null;
                 }
             };
         }
-        return { length: 0, [Symbol.iterator]: function*(){}, item: () => null };
+        return {
+            length: 0, [Symbol.iterator]: function* () {
+            }, item: () => null
+        };
     },
-    getElementById:function(id){
+    getElementById: function (id) {
         // console.log('getElementById获取id————',id)
     },
-    cookie:'abRequestId=c9f13ddc-ec96-5cf9-bd4f-86241206db2b; ets=1779843721483; xsecappid=xhs-pc-web; a1=19e66f3e962g9kl9q8uklkx2pkirzuq4n8ydrtry950000508806; webId=0b7fe9d8891ba0d9951af02054b791eb; gid=yjdKKiqfSqIjyjdKKiqdjY9FKJkjT1jAY7T1vvjTCJUT3f28Fu7A4F88828YY8K8f80yWfjd; webBuild=6.13.7; loadts=1780137853246; unread={%22ub%22:%2269f960c2000000001b022971%22%2C%22ue%22:%2269f417cd0000000035025c99%22%2C%22uc%22:32}; websectiga=82e85efc5500b609ac1166aaf086ff8aa4261153a448ef0be5b17417e4512f28; sec_poison_id=2e825055-a58e-4565-bbab-003def644616',
-    all:new HTMLAllCollection({length:1129},null,'fatdog'),
-    body:new HTMLBodyElement({},null,'fatdog'),
-    documentElement:new HTMLHtmlElement({
-        getAttribute:function(name){
-        // console.log("getAttribute读取",name)
-    }
-    },null,'fatdog'),
+    cookie: 'abRequestId=c9f13ddc-ec96-5cf9-bd4f-86241206db2b; ets=1779843721483; xsecappid=xhs-pc-web; a1=19e66f3e962g9kl9q8uklkx2pkirzuq4n8ydrtry950000508806; webId=0b7fe9d8891ba0d9951af02054b791eb; gid=yjdKKiqfSqIjyjdKKiqdjY9FKJkjT1jAY7T1vvjTCJUT3f28Fu7A4F88828YY8K8f80yWfjd; webBuild=6.13.7; loadts=1780137853246; unread={%22ub%22:%2269f960c2000000001b022971%22%2C%22ue%22:%2269f417cd0000000035025c99%22%2C%22uc%22:32}; websectiga=82e85efc5500b609ac1166aaf086ff8aa4261153a448ef0be5b17417e4512f28; sec_poison_id=2e825055-a58e-4565-bbab-003def644616',
+    all: new HTMLAllCollection({length: 1129}, null, 'fatdog'),
+    body: new HTMLBodyElement({}, null, 'fatdog'),
+    documentElement: new HTMLHtmlElement({
+        getAttribute: function (name) {
+            // console.log("getAttribute读取",name)
+        }
+    }, null, 'fatdog'),
 
 }, 'Node');
 createConstructor('HTMLDocument', true, [], {}, 'Document');
 createConstructor('Storage', true, [], {
-    getItem: function(key) {
+    getItem: function (key) {
         // console.log('localStorage.getItem获取', key);
         return this[key] || null;
     },
-    setItem: function(key, value) {
+    setItem: function (key, value) {
         // console.log('localStorage.setItem设置', key, value);
         this[key] = String(value);
     },
-    removeItem: function(key) {
+    removeItem: function (key) {
         // console.log('localStorage.removeItem删除', key);
         if (this[key]) delete this[key];
     },
-    clear: function() {
+    clear: function () {
         this.__storage__ = {};
     }
 });
 
 
-
-createConstructor('XMLHttpRequestEventTarget', true, [], {},'EventTarget');
+createConstructor('XMLHttpRequestEventTarget', true, [], {}, 'EventTarget');
 createConstructor('XMLHttpRequest', true, [], {
-    open: function(method, url, async) {
+    open: function (method, url, async) {
         console.log('XHR.open:', method, url);
     },
-    send: function(body) {
+    send: function (body) {
         console.log('XHR.send:', body);
     },
-    setRequestHeader: function(key, value) {
+    setRequestHeader: function (key, value) {
         console.log('XHR.setRequestHeader:', key, value);
     },
-    abort: function() {},
-    getResponseHeader: function(key) { return null; },
-    getAllResponseHeaders: function() { return ''; },
-    overrideMimeType: function() {},
-},'XMLHttpRequestEventTarget');
+    abort: function () {
+    },
+    getResponseHeader: function (key) {
+        return null;
+    },
+    getAllResponseHeaders: function () {
+        return '';
+    },
+    overrideMimeType: function () {
+    },
+}, 'XMLHttpRequestEventTarget');
 
 
-window.window = window.self =window.top = window
+window.window = window.self = window.top = window
 
 Object.setPrototypeOf(window, Window.prototype);
 
-location =new Location({
-    protocol:'https:',
+location = new Location({
+    protocol: 'https:',
     hash: "",
     host: "www.xiaohongshu.com",
     hostname: "www.xiaohongshu.com",
     href: "https://www.xiaohongshu.com/explore",
     origin: "https://www.xiaohongshu.com",
-},null,'fatdog')
+}, null, 'fatdog')
 document = new HTMLDocument({
-    querySelector:function(selectors){console.log("querySelector被调用————",selectors)},
+    querySelector: function (selectors) {
+        console.log("querySelector被调用————", selectors)
+    },
 
-},null,"fatdog")
-navigator = new Navigator({
-
-},null,"fatdog")
-screen=new Screen({
-
-},null,"fatdog")
-history=new History({},null,'fatdog')
+}, null, "fatdog")
+navigator = new Navigator({}, null, "fatdog")
+screen = new Screen({}, null, "fatdog")
+history = new History({}, null, 'fatdog')
 localStorage = new Storage({
     // "MF_STATISTICS": "{\"timestamp\":1780150195259,\"visitTimes\":11,\"readFeedCount\":0}",
     // "dsllt": "1780150329313",
@@ -544,11 +548,14 @@ localStorage = new Storage({
     // "sdt_source_storage_key": "{\"commonPatch\":[\"/fe_api/burdock/v2/note/post\",\"/api/sns/web/v1/comment/post\",\"/api/sns/web/v1/note/like\",\"/api/sns/web/v1/note/collect\",\"/api/sns/web/v1/user/follow\",\"/api/sns/web/v1/feed\",\"/api/sns/web/v1/login/activate\",\"/api/sns/web/v1/note/metrics_report\",\"/api/redcaptcha\",\"/api/store/jpd/main\",\"/phoenix/api/strategy/getAppStrategy\",\"/web_api/sns/v2/note\"],\"reportUrl\":\"/api/sec/v1/shield/webprofile\",\"desVersion\":\"2\",\"validate\":true,\"signUrl\":\"https://fe-static.xhscdn.com/as/v1/f218/a15/public/04b29480233f4def5c875875b6bdc3b1.js\",\"signVersion\":\"1\",\"xhsTokenUrl\":\"https://fe-static.xhscdn.com/as/v1/3e44/public/bf7d4e32677698655a5cadc581fd09b3.js\",\"extraInfo\":{\"dsUrl\":\"https://fe-static.xhscdn.com/as/v2/ds/6545c70e73d7e06896b3c574a70b5438.js\",\"kbconf\":null,\"fpMatchUrls\":null},\"url\":\"https://fe-static.xhscdn.com/as/v2/fp/643f48183a62c46e6c924b3f0456767a.js\"}",
     // "_renderInfo": "angle (amd, amd radeon 780m graphics (0x00001900) direct3d11 vs_5_0 ps_5_0, d3d11)",
     // "xhs_context_networkQuality": "WEAK"
-},null,'fatdog')
+}, null, 'fatdog')
 
-window.DeviceMotionEvent=function DeviceMotionEvent(){}
-window.MouseEvent=function(){}
-window.WebGLRenderingContext=function(){}
+window.DeviceMotionEvent = function DeviceMotionEvent() {
+}
+window.MouseEvent = function () {
+}
+window.WebGLRenderingContext = function () {
+}
 window.location = location
 window.navigator = navigator
 window.screen = screen
@@ -576,13 +583,15 @@ window.chrome = {
         }
     }
 }
-window.setInterval=function(){}
-window.setTimeout=function(){}
+window.setInterval = function () {
+}
+window.setTimeout = function () {
+}
 
 
 // 清除 safeFunction 对原生构造函数的污染
 var _sym = Symbol('('.concat('', ')'));
-[Error, RegExp, Date, Function, Array, String, Number, Boolean, Promise, Map, Set, Symbol].forEach(function(c) {
+[Error, RegExp, Date, Function, Array, String, Number, Boolean, Promise, Map, Set, Symbol].forEach(function (c) {
     delete c[_sym];
 });
 
