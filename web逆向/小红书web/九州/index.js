@@ -1,4 +1,6 @@
 const {MD5, Hex} = require("crypto-js");
+require('./x-s/env.js')
+require('./x-s/mnsv2.js')
 
 class XhsSign {
     constructor() {
@@ -18,10 +20,11 @@ class XhsSign {
             Linux: 4,
             other: 5,
         };
+        this.ALPHABET = "ZmserbBoHQtNP+wOcza/LpngG8yJq42KWYj0DSfdikx3VT16IlUAFM97hECvuRX5";
     }
 
     tripletToBase64(e) {
-        var ALPHABET = "ZmserbBoHQtNP+wOcza/LpngG8yJq42KWYj0DSfdikx3VT16IlUAFM97hECvuRX5";
+        var ALPHABET = this.ALPHABET;
         var u = [];
         var i = 0;
         while (i < ALPHABET.length) {
@@ -29,6 +32,17 @@ class XhsSign {
             i++;
         }
         return u[e >> 18 & 63] + u[e >> 12 & 63] + u[e >> 6 & 63] + u[63 & e];
+    }
+
+    encodeChunk(e, a, s) {
+        var m = [];
+        var w = a;
+        while (w < s) {
+            var chunk = (e[w] << 16 & 0xff0000) + (e[w + 1] << 8 & 65280) + (255 & e[w + 2]);
+            m.push(this.tripletToBase64(chunk));
+            w += 3;
+        }
+        return m.join("");
     }
 
     /**
@@ -58,16 +72,6 @@ class XhsSign {
         return (-1 ^ w) >>> 0;
     }
 
-    encodeChunk(e, a, s) {
-        var m = [];
-        var w = a;
-        while (w < s) {
-            var chunk = (e[w] << 16 & 0xff0000) + (e[w + 1] << 8 & 65280) + (255 & e[w + 2]);
-            m.push(tripletToBase64(chunk));
-            w += 3;
-        }
-        return m.join("");
-    }
 
     /**
      *
@@ -75,6 +79,14 @@ class XhsSign {
      * @returns {string}
      */
     b64Encode(e) {
+        var ALPHABET = this.ALPHABET;
+        var u = [];
+        var i = 0;
+        while (i < ALPHABET.length) {
+            u[i] = ALPHABET[i];
+            i++;
+        }
+
         var a;
         var s = e.length;
         var m = s % 3;
@@ -83,7 +95,7 @@ class XhsSign {
         var R = 0;
         var P = s - m;
         while (R < P) {
-            w.push(encodeChunk(e, R, R + C > P ? P : R + C));
+            w.push(this.encodeChunk(e, R, R + C > P ? P : R + C));
             R += C;
         }
         if (1 === m) {
@@ -182,13 +194,13 @@ class XhsSign {
      * @returns {string}
      */
     get_xs(e, a, a1) {
+        document.cookie = `a1=${a1};`;
 
         var u = e;
         "[object Object]" === Object.prototype.toString.call(a) || "[object Array]" === Object.prototype.toString.call(a) || (void 0 === a ? "undefined" : this._type_of(a)) === "object" && null !== a ? u += JSON.stringify(a) : "string" == typeof a && (u += a);
         var m = MD5([u].join("")).toString(Hex);
         var w = MD5(e).toString(Hex);
         var C = window.mnsv2(u, m, w);
-        document.cookie = `a1=${a1};`;
 
         var P = {
             x0: '4.3.5',
@@ -204,4 +216,7 @@ class XhsSign {
 }
 
 xhs_sign = new XhsSign()
-console.log(xhs_sign.generateLocalId())
+const path = "/api/sns/web/v1/login/activate"
+const body = {}
+const a1 = "19ece8e23e66re1y8nhmyw64sj7zzmcsmaqgzrr3n50000305328"
+console.log(xhs_sign.get_xs(path, body, a1))

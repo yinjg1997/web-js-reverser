@@ -55,8 +55,7 @@ function test_mnsv2() {
     const m = '3d08093c65de13679b96a87493e1ed41'
     const w = "30075585641997ca77efa138e473890d"
     console.log("================")
-    console.log(window)
-    // console.log(window.mnsv2)
+    console.log(window.mnsv2)
     // const res = window.mnsv2(u, m, w);
     // console.log(res)
     // console.log(res.length)
