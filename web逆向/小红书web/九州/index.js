@@ -221,8 +221,8 @@ class XhsSign {
         var C = this.sandbox.window.mnsv2(u, m, w);
 
         var P = {
-            x0: '4.3.5',
-            x1: "xhs-pc-web",
+            x0: this.x0,
+            x1: this.x1,
             x2: 'Mac OS' || "PC",
             x3: C,
             x4: a ? (a === undefined ? "undefined" : this._type_of(a)) : ""
