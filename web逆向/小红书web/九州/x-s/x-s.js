@@ -1,7 +1,8 @@
 const {MD5, Hex, Base64, Utf8} = require('crypto-js')
 const {xhs_crc32, xhs_b64Encode, xhs_encodeUtf8} = require('../tool.js')
 
-require('./env.js')
+// require('./env.js')
+require('./mini_env.js')
 require('./mnsv2.js')
 
 // console.log(MD5('/api/sec/v1/scripting{"callFrom":"web","callback":"seccallback"}').toString(Hex));
@@ -55,10 +56,10 @@ function test_mnsv2() {
     const m = '3d08093c65de13679b96a87493e1ed41'
     const w = "30075585641997ca77efa138e473890d"
     console.log("================")
-    console.log(window.mnsv2)
-    // const res = window.mnsv2(u, m, w);
-    // console.log(res)
-    // console.log(res.length)
+    console.log(window.mnsv2 !== undefined)
+    const res = window.mnsv2(u, m, w);
+    console.log(res)
+    console.log(res.length)
 }
 test_mnsv2()
 
