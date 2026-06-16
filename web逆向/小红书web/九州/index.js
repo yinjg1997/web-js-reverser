@@ -27,7 +27,7 @@ class XhsSign {
 
     _initSandbox() {
         this.sandbox = {
-            console,
+            // console,
             performance: require('perf_hooks').performance,
             TextEncoder: require('util').TextEncoder,
             Event: function Event() {
