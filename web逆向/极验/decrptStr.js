@@ -132,7 +132,7 @@ _ᕸᖉᖀᖗ.$_Dx = function () {
 function _ᕸᖉᖀᖗ() {}
 
 // console.log(_ᕸᖉᖀᖗ.$_CO(88));
-// console.log(_ᕸᖉᖀᖗ.$_Dx());
+// console.log(_ᕸᖉᖀᖗ.$_Dx()[12][26]);
 module.exports = {
   decryptStr1: _ᕸᖉᖀᖗ.$_CO,
   decryptStr2: _ᕸᖉᖀᖗ.$_Dx

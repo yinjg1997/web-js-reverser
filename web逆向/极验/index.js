@@ -69,7 +69,7 @@ traverse(ast, {
         const bingding2 = path.scope.getBinding(deStr2);
         // bingding2.constant 标记该变量是否为常量、不会被重新赋值
         if (bingding2 && bingding2.constant) {
-          bingding2.referencePaths.forEach((refPath) => {  
+          bingding2.referencePaths.forEach((refPath) => {
             // console.log(refPath + "");
             const refParentPath = refPath.parentPath;
             if (
@@ -97,6 +97,7 @@ traverse(ast, {
       const declaration = declarations[0];
       const var_name = declaration.id.name;
       const init = declaration.init;
+
       if (
         types.isMemberExpression(init) &&
         types.isMemberExpression(init.object) &&
@@ -105,18 +106,12 @@ traverse(ast, {
         init.object.object.callee.object.name === string_func_name &&
         init.object.object.callee.property.name === "$_Dx"
       ) {
+        // console.log(path.get('declarations.0') + "");
         const bingding = path.scope.getBinding(var_name);
         if (bingding && bingding.constant) {
           bingding.referencePaths.forEach((refPath) => {
-            const refParentPath = refPath.parentPath;
-            // console.log(refParentPath + "");
-            console.log("======================");
-            if (types.isBinaryExpression(refParentPath.node) && types.isIdentifier(refParentPath.node.left)) {
-              // refParentPath.replaceWith(init);
-              // console.log(refParentPath.node.left + "");
-              refParentPath.node.left.replaceWith(init);
-            }
-
+            console.log(refPath + "");
+            refPath.replaceWith(init);
           });
         }
       }

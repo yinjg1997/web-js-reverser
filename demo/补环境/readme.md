@@ -1,3 +1,22 @@
+# 20260620
+代理 Proxy 是会产生新对象的
+
+
+一个function A(){}有 prototype 证明其是一个构造函数, 但是 A 是调用不了 prototype的, 只有A的实例才能访问prototype  
+
+document.all 为不可检测对象, 不可检测对象的特征要伪装
+
+| 检测类型 | 检测代码 | 对策 |
+|---------|---------|------|
+| **全局对象** | `typeof window === 'undefined'` | 定义 window 对象 |
+| **process** | `'process' in window` | delete global.process |
+| **Buffer** | `typeof Buffer !== 'undefined'` | delete global.Buffer |
+| **toString** | `Object.prototype.toString.call(w)` | 设置 Symbol.toStringTag |
+| **Function.toString** | `fn.toString()` 检查 `[native code]` | 使用 safeFunction |
+| **属性描述符** | `Object.getOwnPropertyDescriptor` | 使用 defineProperty |
+| **原型链** | `window instanceof Window` | setPrototypeOf |
+| **webdriver** | `navigator.webdriver` | 设为 false |
+| **plugins** | `navigator.plugins.length` | 提供 PluginArray |
 # 京东那个补环境案例很完美
 
 # 补环境应该跟着报错补, 不用跟着undefined 补
