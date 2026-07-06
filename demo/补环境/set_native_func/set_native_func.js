@@ -1,3 +1,6 @@
+/**
+ * 伪造原生函数的 toString 方法
+ */
 class NativeFuncDisguiser {
     constructor() {
         this.map = new Map()

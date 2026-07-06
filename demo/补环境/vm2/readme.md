@@ -1,10 +1,11 @@
+# vm 沙箱
+`vm` 沙箱是一个最小化的裸 JS 环境。
 
-vm 沙箱是一个最小化的裸 JS 环境。
+很多补环境框架是用 vm 的原因是 node 环境中的 module 检测, 浏览器中是没有 module 的, 而且这个 module 无法被delete 删除
   
 vm.createContext({}) 创建出来的上下文里只有:
 - JS 标准内置:Object / Array / Function / Math / Date / JSON / Promise / RegExp / Set / Map / Symbol / Reflect ...
 - globalThis(指向沙箱自己)
   
 没有 Node 全局:process / Buffer / require / module / __dirname / setImmediate / TextEncoder(在低版本)...
-也没有 浏览器全局:window / document / navigator / location / localStorage / fetch / alert...
 也没有 浏览器全局:window / document / navigator / location / localStorage / fetch / alert...
