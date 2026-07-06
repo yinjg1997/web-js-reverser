@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "checkJs": true,
+    "noEmit": true,
     "noImplicitAny": false,
     "strictNullChecks": false,
     "strict": false,
@@ -8,6 +10,9 @@
     "target": "ES2020",
     "lib": ["ES2020", "dom"],
     "moduleResolution": "node",
-    "module": "commonjs"
-  }
+    "module": "commonjs",
+    "maxNodeModuleJsDepth": 2
+  },
+  "include": ["**/*.js", "**/*.cjs", "**/*.mjs"],
+  "exclude": ["node_modules", "dist", "build", "outputs"]
 }

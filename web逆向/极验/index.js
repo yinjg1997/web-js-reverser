@@ -2,6 +2,7 @@ const { writeFileSync, readFileSync } = require("fs");
 
 const parser = require("@babel/parser"); // 字符串 → AST
 const traverse = require("@babel/traverse").default; // 遍历 AST
+exports.traverse = traverse;
 const generator = require("@babel/generator").default; // AST → 字符串
 const types = require("@babel/types"); // 造节点
 
@@ -10,7 +11,9 @@ const { decryptStr1, decryptStr2 } = require("./decrptStr.js");
 const inpte_code = readFileSync("./gcaptcha4.js", { encoding: "utf-8" });
 
 var ast = parser.parse(inpte_code);
+exports.ast = ast;
 let string_func_name = null;
+exports.string_func_name = string_func_name;
 traverse(ast, {
   FunctionDeclaration(path) {
     const name = path.node.id.name;
@@ -67,7 +70,6 @@ traverse(ast, {
         }
         const deStr2 = declarations[2].id.name;
         const bingding2 = path.scope.getBinding(deStr2);
-        // bingding2.constant 标记该变量是否为常量、不会被重新赋值
         if (bingding2 && bingding2.constant) {
           bingding2.referencePaths.forEach((refPath) => {
             // console.log(refPath + "");
@@ -87,46 +89,6 @@ traverse(ast, {
       }
     }
   },
-});
-
-// decryptStr2
-traverse(ast, {
-  VariableDeclaration(path) {
-    const { declarations } = path.node;
-    if (declarations.length === 1) {
-      const declaration = declarations[0];
-      const var_name = declaration.id.name;
-      const init = declaration.init;
-
-      if (
-        types.isMemberExpression(init) &&
-        types.isMemberExpression(init.object) &&
-        types.isCallExpression(init.object.object) &&
-        types.isIdentifier(init.object.object.callee.object) &&
-        init.object.object.callee.object.name === string_func_name &&
-        init.object.object.callee.property.name === "$_Dx"
-      ) {
-        // console.log(path.get('declarations.0') + "");
-        const bingding = path.scope.getBinding(var_name);
-        if (bingding && bingding.constant) {
-          bingding.referencePaths.forEach((refPath) => {
-            console.log(refPath + "");
-            refPath.replaceWith(init);
-          });
-        }
-      }
-    }
-  },
-  // MemberExpression(path) {
-  //     if (types.isCallExpression(path.node.object.object)
-  //         && types.isIdentifier(path.node.object.object.callee.object)
-  //         && path.node.object.object.callee.object.name === string_func_name
-  //         && path.node.object.object.callee.property.name === "$_Dx"
-  //     ) {
-  //         console.log(path + "")
-  //     }
-  //
-  // }
 });
 
 const out_code = generator(ast, {
