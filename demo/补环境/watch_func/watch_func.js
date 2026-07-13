@@ -1,5 +1,5 @@
 /**
- *
+ * Proxy 不是复制对象，而是创建一个代理对象；它只拦截你通过这个代理对象进行的操作。
  * @param {object} obj
  * @param {string} name
  * @returns {object}
