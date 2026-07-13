@@ -85,3 +85,5 @@ function watch(object, name) {
     },
   });
 }
+
+module.exports = { watch };
